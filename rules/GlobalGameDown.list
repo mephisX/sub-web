@@ -1,0 +1,8 @@
+# LOL TW download
+DOMAIN,loltw.qcloud.gpipe.garenanow.com
+DOMAIN,loltw.cdn.gpipe.garenanow.com
+# 暴雪战网下载 akamaihd CDN
+DOMAIN,blzddist1-a.akamaihd.net
+DOMAIN,blzddistkr1-a.akamaihd.net
+# 暴雪战网下载 level3 CDN
+DOMAIN,level3.blizzard.com
