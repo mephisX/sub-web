@@ -1,0 +1,7 @@
+;short names
+专线@IPLC
+中继@BGP
+TCP:@TCP
+WS:@WS
+;times RE
+\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?@$1x
