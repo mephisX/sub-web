@@ -62,7 +62,6 @@ dns:
     - 1.2.4.8
     - 119.29.29.29
     - https://dns.alidns.com/dns-query
-{% if request.dns != "fake" %}
   fallback:
     - https://dns.google/dns-query
     - tls://1.1.1.1:853
@@ -72,11 +71,8 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-{% endif %}
-{% if request.dns == "tun" %}
 experimental:
   interface-name: 以太网
-{% endif %}
 {% if request.new_name == "true" %}
 proxies: ~
 proxy-groups: ~
