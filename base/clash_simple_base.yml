@@ -16,11 +16,12 @@
     enhanced-mode: redir-host
     nameserver:
       - 119.29.29.29
-      - 114.114.114.114
+      - https://dns.alidns.com/dns-query
     fallback:
       - tls://1.1.1.1:853
       - https://1.1.1.1/dns-query
       - tls://8.8.8.8:853
+      - https://dns.google/dns-query
     fallback-filter:
       geoip: true
       ipcidr:
