@@ -23,7 +23,7 @@ EU,🇪🇺
 (KP|朝鲜),🇰🇵
 (KR|Korea|KOR|首尔|韩|韓),🇰🇷
 (MO|Macao|澳门|CTM),🇲🇴
-(MY|Malaysia|马来西亚),🇲🇾
+(MY|Malaysia|马来西亚|吉隆坡),🇲🇾
 (NL|Netherlands|荷兰|阿姆斯特丹),🇳🇱
 (PH|Philippines|菲律宾),🇵🇭
 (RO|罗马尼亚),🇷🇴
