@@ -37,7 +37,7 @@ redir-port: 7892
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:7894
+external-controller: 0.0.0.0:9090
 dns:
   enable: true
   ipv6: false
@@ -67,11 +67,15 @@ dns:
     - https://dns.google/dns-query
     - tls://1.1.1.1:853
     - https://1.1.1.1/dns-query
-	- tls://8.8.8.8:853
+    - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
 {% endif %}
 {% if request.dns == "tun" %}
-  experimental:
-    interface-name: 以太网
+experimental:
+  interface-name: 以太网
 {% endif %}
 {% if request.new_name == "true" %}
 proxies: ~
@@ -111,7 +115,7 @@ Request: local (us, none)
 [URL-REJECTION]
 
 [TCP]
-{% include "snip/base_apple.tpl" %}
+
 
 [GLOBAL]
 
@@ -176,7 +180,7 @@ https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrit
 [server_local]
 
 [filter_local]
-{% include "snip/base_apple.tpl" %}
+
 
 [rewrite_local]
 
