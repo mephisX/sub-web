@@ -9,4 +9,4 @@ DOMAIN-SUFFIX,asmfreakz.com
 # pokerstars有国家限制，建议使用 英国 节点
 DOMAIN-SUFFIX,pokerstars.com
 # skeet欧洲社区服在 法国
-MATCH,eu.gamesense.pub
+DOMAIN-SUFFIX,eu.gamesense.pub
