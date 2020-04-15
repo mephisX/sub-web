@@ -11,8 +11,9 @@ Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microso
 PROXY,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
 DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-SelectUS,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnUS.list
 SelectEU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnEU.list
+SelectCA,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
+SelectUS,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnUS.list
 SelectSGP,[]GEOIP,SG
 SelectJP,[]GEOIP,JP
 SelectKR,[]GEOIP,KR
