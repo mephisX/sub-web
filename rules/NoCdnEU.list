@@ -1,9 +1,12 @@
 # NoCdnEU
 DOMAIN-SUFFIX,speedrun.com
-IP-CIDR,145.239.206.38/32
+# 毛子网服务器在 英国
 DOMAIN-KEYWORD,lolzteam
+# AimWare服务器在 罗马尼亚
 DOMAIN-SUFFIX,aimware.net
-IP-CIDR,5.254.113.91/32
+# asmfreakz服务器在 荷兰
 DOMAIN-SUFFIX,asmfreakz.com
-IP-CIDR,185.30.165.39/32
+# pokerstars有国家限制，建议使用 英国 节点
 DOMAIN-SUFFIX,pokerstars.com
+# skeet欧洲社区服在 法国
+MATCH,eu.gamesense.pub
