@@ -48,7 +48,10 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
-    - localhost.ptlogin2.qq.com
+    - "localhost.ptlogin2.qq.com"
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
 {% endif %}
 {% if request.dns == "tun" %}
   listen: 0.0.0.0:53
