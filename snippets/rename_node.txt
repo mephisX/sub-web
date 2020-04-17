@@ -1,6 +1,5 @@
 ;short names
 TCP:@TCP
 WS:@WS
-专线 深圳 → 香港@N3RO 深港
 ;times RE
 \(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?@$1x
