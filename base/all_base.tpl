@@ -74,8 +74,13 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
+{% if request.wifi == "true" %}
+experimental:
+  interface-name: WLAN
+{% else %}
 experimental:
   interface-name: 以太网
+{% endif %}
 {% if request.new_name == "true" %}
 proxies: ~
 proxy-groups: ~
