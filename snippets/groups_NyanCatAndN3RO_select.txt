@@ -13,8 +13,8 @@ SelectAU`select`.*(悉尼|澳大利亚).*$
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$
 SelectCA`select`^(?!.*?(Daily|TCP|WS)).*多伦多.*$
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$
-LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*香港.*$`http://clients3.google.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*新加坡.*$`http://clients3.google.com/generate_204`300
+LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|N3RO|北京|TCP|WS)).*香港.*$`http://clients3.google.com/generate_204`300
+LowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone|N3RO|北京|TCP|WS)).*新加坡.*$`http://clients3.google.com/generate_204`300
 PROXY`select`[]N3RO`[]DIRECT
 FINAL`select`[]PROXY`[]DIRECT
 Apple`select`[]DIRECT`[]PROXY
