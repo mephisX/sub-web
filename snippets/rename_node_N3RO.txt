@@ -1,10 +1,6 @@
 !!GROUPID=0!!专线@IPLC
 !!GROUPID=0!!中继@BGP
-!!GROUPID=1!!直连@直
-!!GROUPID=1!!TCP:@TCP
-!!GROUPID=1!!WS:@WS
 !!GROUPID=0!! → @
-!!GROUPID=1!! - @
 !!GROUPID=0!!联通@
 !!GROUPID=0!!双线@
 !!GROUPID=0!!中国@中
@@ -65,8 +61,5 @@
 !!GROUPID=0!!土耳其@土
 !!GROUPID=0!!澳大利亚@澳
 !!GROUPID=0!!-([A-Z])(港|台|韩|日|新|美)@$2$1
-!!GROUPID=0!!\#Daily @
-!!GROUPID=0!!\#Asia@
-;times RE
 !!GROUPID=0!!\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?@$1x
 !!GROUPID=0!!.*((IPLC|BGP) [\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] 0[0-9])@$1 #N3RO
