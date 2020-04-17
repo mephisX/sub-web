@@ -1,24 +1,25 @@
-Premium`select`.*Premium.*`http://www.gstatic.com/generate_204`300
-Game`select`.*(Game|Fullcone).*`http://www.gstatic.com/generate_204`300
-Daily`select`^(?!.*?(TCP|WS)).*Daily.*`http://www.gstatic.com/generate_204`300
-N3RO`select`.*N3RO.*`http://www.gstatic.com/generate_204`300
-VMESS`select`.*(TCP|WS).*`http://www.gstatic.com/generate_204`300
-SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`http://www.gstatic.com/generate_204`300
-SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`http://www.gstatic.com/generate_204`300
-SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`http://www.gstatic.com/generate_204`300
-SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`http://www.gstatic.com/generate_204`300
-SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`http://www.gstatic.com/generate_204`300
-SelectSEA`select`.*(胡志明市|曼谷|孟买).*$`http://www.gstatic.com/generate_204`300
-SelectAU`select`.*(悉尼|澳大利亚).*$`http://www.gstatic.com/generate_204`300
-SelectUS`select`^(?!.*?(Daily|TCP|WS)).*America.*$`http://www.gstatic.com/generate_204`300
-SelectEU`select`^(?!.*?(Daily|TCP|WS)).*Europe.*$`http://www.gstatic.com/generate_204`300
-LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*香港.*$`http://www.gstatic.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*新加坡.*$`http://www.gstatic.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 [A-Z] #Premium).*`(上海 - 香港 [A-Z] #Premium).*`http://clients3.google.com/generate_204`300
+Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
+Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*(深圳 - (香港|新加坡|东京)).*`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
+N3RO`fallback`.*N3RO.*`http://clients3.google.com/generate_204`300
+VMESS`select`.*(TCP|WS).*
+SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
+SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$
+SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$
+SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$
+SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$
+SelectSEA`select`.*(胡志明市|曼谷|孟买).*$
+SelectAU`select`.*(悉尼|澳大利亚).*$
+SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$
+SelectCA`select`^(?!.*?(Daily|TCP|WS)).*多伦多.*$
+SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$
+LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*香港.*$`http://clients3.google.com/generate_204`300
+LowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone|北京|TCP|WS)).*新加坡.*$`http://clients3.google.com/generate_204`300
 PROXY`select`[]N3RO`[]DIRECT
 FINAL`select`[]PROXY`[]DIRECT
 Apple`select`[]DIRECT`[]PROXY
 Microsoft`select`[]DIRECT`[]PROXY
-Telegram`select`[]LowRateSGP`[]VMESS`[]Daily`[]SelectSGP`[]PROXY
-GlobalMedia`select`[]LowRateHK`[]VMESS`[]Daily`[]SelectHK`[]PROXY
+Telegram`select`[]LowRateSGP`[]VMESS`[]Daily`[]PROXY
+GlobalMedia`select`[]LowRateHK`[]VMESS`[]Daily`[]PROXY
 GlobalGameDownload`select`[]DIRECT`[]VMESS`[]Daily`[]PROXY
 Hijacking`select`[]REJECT`[]DIRECT
