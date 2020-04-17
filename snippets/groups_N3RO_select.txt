@@ -2,8 +2,12 @@ IPLC`select`.*IPLC.*
 BGP`select`.*BGP.*
 VMESS`select`.*(TCP|WS).*
 SelectHK`select`^(?!.*?BGP).*港.*$
-SelectJP`select`^.*日.*$
+SelectHK`select`*(台湾|台).*$
+SelectKR`select.*(韩国|韩).*$
+SelectJP`select`^.*(日本|日).*$
 SelectSGP`select`^(?!.*?BGP).*新.*$
+SelectSEA`select`.*(印|印度).*$
+SelectAU`select`.*(澳洲|澳).*$
 SelectUS`select`^(?!.*?BGP).*美.*$
 SelectEU`select`.*(俄|德|英).*
 LowRateHK`url-test`^(?!.*?IPLC).*港.*$`http://clients3.google.com/generate_204`300
