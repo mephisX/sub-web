@@ -146,9 +146,7 @@ final, Final
 [rewrite_local]
 
 [mitm]
-passphrase = {{ passphrase }}
-p12 = {{ p12 }}
-hostname = 
+
 {% endif %}
 
 
