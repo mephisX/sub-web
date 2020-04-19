@@ -1,31 +1,4 @@
 {# 
-Target : Value Set
-Request: local (Quantumult / Quantumult X)
-Baseset: passphrase (Quantumult / Quantumult X)
-         p12 (Quantumult / Quantumult X)
-         iconurl (Quantumult X)
-#}
-{% if request.target == "quan" or request.target == "quanx" %}
-{% if request.local == "us" %}
-  {{ set("appleDefault","DIRECT") }}
-  {{ set("appleApi","🇺🇸 美区偏好") }}
-  {{ set("appleCDN","DIRECT") }}
-  {{ set("appleLocal","📡 定位偏好") }}
-  {{ set("appleNews","🇺🇸 美区偏好") }}
-{% else %}
-  {{ set("appleDefault","DIRECT") }}
-  {{ set("appleApi","DIRECT") }}
-  {{ set("appleCDN","DIRECT") }}
-  {{ set("appleLocal","DIRECT") }}
-  {{ set("appleNews","DIRECT") }}
-{% endif %}
-  {{ set("passphrase","XXXXXXXX") }}
-  {{ set("p12","XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") }}
-  {{ set("iconUrl","https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/") }}
-{% endif %}
-
-
-{# 
 Target : Clash, ClashR
 Request: dns (fake, tun, none)
          new_name (true, false)
@@ -93,99 +66,64 @@ Rule: ~
 {% endif %}
 {% endif %}
 
-
-{# 
-Target : Quantumult
-Request: local (us, none)
-#}
-{% if request.target == "quan" %}
-[SERVER]
-
-[SOURCE]
-
-[BACKUP-SERVER]
-
-[SUSPEND-SSID]
-
-[POLICY]
-
-[DNS]
-119.29.29.29,223.5.5.5,1.0.0.1,8.8.8.8
-
-[REWRITE]
-^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
-^https?:\/\/(www.)?taobao\.com\/ url 302 https://taobao.com/
-^https?:\/\/(www.)?jd\.com\/ url 302 https://www.jd.com/
-
-[URL-REJECTION]
-
-[TCP]
-
-
-[GLOBAL]
-
-[HOST]
-
-[STATE]
-STATE,AUTO
-
-[MITM]
-passphrase = {{ passphrase }}
-p12 = {{ p12 }}
-{% endif %}
-
-
 {# 
 Target : Quantumult X
 Request: local (us, none)
 #}
 {% if request.target == "quanx" %}
 [general]
-excluded_routes = 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
-geo_location_checker = http://ip-api.com/json/?lang = zh-CN, https://gist.githubusercontent.com/xxxxxx/xxxxxxxxxxxx/raw/ipapi.js
-network_check_url = http://www.baidu.com/
-server_check_url = http://www.gstatic.com/generate_204
+network_check_url=http://www.baidu.com/
+server_check_url=http://bing.com/
+excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
+dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com
+geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubusercontent.com/xxxxxx/xxxxxxxxxxxx/raw/ipapi.js
+# 指定在某个 Wi-Fi 下暂停 Quantumult X
+;ssid_suspended_list = LINK_22E174, LINK_22E175
 
 [dns]
-server = 223.5.5.5
-server = 119.29.29.29
-server = 1.0.0.1
-server = 8.8.8.8
+server=1.2.4.8
+server=119.29.29.29
+server=223.5.5.5
 
 [policy]
-static = 🎯 总体偏好, direct, img-url = {{ iconUrl }}Star.png
-static = 📺 影视偏好, direct, img-url = {{ iconUrl }}Streaming.png
-static = 🇭🇰 港区偏好, direct, img-url = {{ iconUrl }}Hong_Kong.png
-static = 🇨🇳 台区偏好, direct, img-url = {{ iconUrl }}Taiwan.png
-static = 🇯🇵 日区偏好, direct, img-url = {{ iconUrl }}Japan.png
-static = 🇷🇺 俄区偏好, direct, img-url = {{ iconUrl }}Russia.png
-static = 🇺🇸 美区偏好, direct, img-url = {{ iconUrl }}United_States.png
-static = 📡 定位偏好, direct, img-url = {{ iconUrl }}Domestic.png
-static = 🇺🇳 优选切换, direct, img-url = {{ iconUrl }}Proxy.png
-static = 🇺🇳 剩余切换, direct, img-url = {{ iconUrl }}Proxy.png
-static = 🇨🇳 直连选择, direct, img-url = {{ iconUrl }}Direct.png
-available = 🇸🇲 专线容错, direct, img-url = {{ iconUrl }}IPLC.png
-available = 🇭🇰 香港容错, direct, img-url = {{ iconUrl }}HK.png
-available = 🇨🇳 台湾容错, direct, img-url = {{ iconUrl }}TW.png
-available = 🇯🇵 日本容错, direct, img-url = {{ iconUrl }}JP.png
-available = 🇷🇺 俄国容错, direct, img-url = {{ iconUrl }}RU.png
-available = 🇺🇸 美国容错, direct, img-url = {{ iconUrl }}US.png
-available = 🇫🇲 备用容错, direct, img-url = {{ iconUrl }}UN.png
+static=🇭🇰 IPLC 香港, direct, img-url={{ iconUrl }}Hong_Kong.png
+static=🇭🇰 BGP 香港, direct, img-url={{ iconUrl }}Hong_Kong.png
+static=🇸🇬 IPLC 新加坡, direct, img-url={{ iconUrl }}Singapore.png
+static=🇸🇬 BGP 新加坡, direct, img-url={{ iconUrl }}Singapore.png
+static=🇺🇸 IPLC 美国, direct, img-url={{ iconUrl }}United_States.png
+static=🇺🇸 BGP 美国, direct, img-url={{ iconUrl }}United_States.png
+static=Final, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=Telegram, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=GlobalMedia, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
 
 [server_remote]
 
 [filter_remote]
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=后续规则修正, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=广告, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=广告, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=运营商劫持及恶意网站, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Telegram.list, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/GlobalMedia.list, tag=国际流媒体服务, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=全球加速, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Apple.list, tag=Apple服务, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=中国直连, force-policy=direct, enabled=true
+;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.txt, tag=Sample, force-policy=your-policy-name, enabled=true
 
 [rewrite_remote]
-{% if request.local == "us" %}
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js_local_WorkingCopy.conf, tag = NobyDa, enabled = true
-{% endif %}
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag = Rewrite_lhie1, enabled = true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag = ConnersHua, enabled = true
 
 [server_local]
 
 [filter_local]
-
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+geoip, cn, direct
+final, Final
 
 [rewrite_local]
 
