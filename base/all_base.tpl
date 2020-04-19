@@ -104,15 +104,6 @@ server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
 
 [policy]
-static=🇭🇰 IPLC 香港, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
-static=🇭🇰 BGP 香港, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
-static=🇸🇬 IPLC 新加坡, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
-static=🇸🇬 BGP 新加坡, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
-static=🇺🇸 IPLC 美国, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
-static=🇺🇸 BGP 美国, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
-static=Final, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
-static=Telegram, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
-static=GlobalMedia, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
 
 [server_remote]
 
