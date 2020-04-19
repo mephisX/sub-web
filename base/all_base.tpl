@@ -29,6 +29,7 @@ Baseset: passphrase (Quantumult / Quantumult X)
 Target : Clash, ClashR
 Request: dns (fake, tun, none)
          new_name (true, false)
+         wifi (true, false)
 #}
 {% if request.target == "clash" or request.target == "clashr" %}
 port: 7890
