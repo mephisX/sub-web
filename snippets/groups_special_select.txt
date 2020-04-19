@@ -1,0 +1,10 @@
+Special`fallback`.*中国 - 全球.*`http://clients3.google.com/generate_204`300
+Media`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
+PROXY`select`[]Special`[]DIRECT
+FINAL`select`[]PROXY`[]DIRECT
+Apple`select`[]DIRECT`[]PROXY
+Microsoft`select`[]DIRECT`[]PROXY
+Telegram`select`[]Media`[]PROXY
+GlobalMedia`select`[]Media`[]PROXY
+GlobalGameDownload`select`[]Media`[]PROXY
+Hijacking`select`[]REJECT`[]DIRECT
