@@ -1,5 +1,5 @@
 Special`fallback`.*中国 - 全球.*`http://clients3.google.com/generate_204`300
-Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
+Daily`select`^(?!.*?(TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
 PROXY`select`[]Daily`[]Special`[]VMESS`[]DIRECT
 FINAL`select`[]PROXY`[]DIRECT
