@@ -84,14 +84,32 @@ geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubus
 server=1.2.4.8
 server=119.29.29.29
 server=223.5.5.5
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.alicdn.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.28.28.28
+server=/*.weixin.com/119.28.28.28
+server=/*.bilibili.com/119.29.29.29
+server=/hdslb.com/119.29.29.29
+server=/*.163.com/119.29.29.29
+server=/*.126.com/119.29.29.29
+server=/*.126.net/119.29.29.29
+server=/*.127.net/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/*.mi.com/119.29.29.29
+server=/*.xiaomi.com/119.29.29.29
 
 [policy]
-static=🇭🇰 IPLC 香港, direct, img-url={{ iconUrl }}Hong_Kong.png
-static=🇭🇰 BGP 香港, direct, img-url={{ iconUrl }}Hong_Kong.png
-static=🇸🇬 IPLC 新加坡, direct, img-url={{ iconUrl }}Singapore.png
-static=🇸🇬 BGP 新加坡, direct, img-url={{ iconUrl }}Singapore.png
-static=🇺🇸 IPLC 美国, direct, img-url={{ iconUrl }}United_States.png
-static=🇺🇸 BGP 美国, direct, img-url={{ iconUrl }}United_States.png
+static=🇭🇰 IPLC 香港, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
+static=🇭🇰 BGP 香港, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
+static=🇸🇬 IPLC 新加坡, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
+static=🇸🇬 BGP 新加坡, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
+static=🇺🇸 IPLC 美国, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
+static=🇺🇸 BGP 美国, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
 static=Final, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 static=Telegram, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 static=GlobalMedia, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
@@ -99,13 +117,13 @@ static=GlobalMedia, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qur
 [server_remote]
 
 [filter_remote]
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=后续规则修正, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=广告, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=广告, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=运营商劫持及恶意网站, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=后续规则修正, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=广告, force-policy=reject, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=广告, force-policy=reject, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=运营商劫持及恶意网站, force-policy=reject, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Telegram.list, tag=Telegram, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/GlobalMedia.list, tag=国际流媒体服务, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=全球加速, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=全球加速, force-policy=proxy, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Apple.list, tag=Apple服务, force-policy=direct, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=中国直连, force-policy=direct, enabled=true
 ;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.txt, tag=Sample, force-policy=your-policy-name, enabled=true
