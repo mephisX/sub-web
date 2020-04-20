@@ -1,5 +1,4 @@
 Special`fallback`.*中国 - 全球.*`http://clients3.google.com/generate_204`300
-Premium`fallback`.*(深圳 - 香港 [A-Z] #Premium).*`(上海 - 香港 [A-Z] #Premium).*`http://clients3.google.com/generate_204`300
 Daily`select`^(?!.*?(TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
 B1gProxy`select`[]Daily`[]Premium`[]Special`[]DIRECT
