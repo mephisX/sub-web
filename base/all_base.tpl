@@ -158,6 +158,27 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 
 [server_local]
 
+[task_local]
+# 什么值得买
+#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js
+
+# 百度签到
+#先登录,浏览器访问一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
+5 0 * * * nzw9314/chavyleung/tieba/tieba.js
+
+# 百度贴吧
+#打开App,访问下右下角 `我的
+1,2,3 0 * * * nzw9314/NobyDa/QuantumultX/TieBa-DailyBonus/TieBa_DailyBonus_QX.js
+
+# 饿了么   (By @syzzzf)
+#打开 APP, 访问下`我的`>`签到领红包`(左上角)
+3 0 * * * nzw9314/Task/elemSign.js
+
+# 网易云音乐
+#浏览器访问并登录: https://music.163.com/m/login
+3 0 * * * nzw9314/chavyleung/neteasemusic/quanx/neteasemusic.js
+
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
