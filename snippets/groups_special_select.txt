@@ -1,7 +1,7 @@
 Special`fallback`.*中国 - 全球.*`http://clients3.google.com/generate_204`300
 Daily`select`^(?!.*?(TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
-B1gProxy`select`[]Daily`[]Premium`[]Special`[]DIRECT
+B1gProxy`select`[]Daily`[]Special`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
