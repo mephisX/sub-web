@@ -1,11 +1,12 @@
 Special`fallback`.*中国 - 全球.*`http://clients3.google.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 [A-Z] #Premium).*`(上海 - 香港 [A-Z] #Premium).*`http://clients3.google.com/generate_204`300
 Daily`select`^(?!.*?(TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
-PROXY`select`[]Daily`[]Special`[]VMESS`[]DIRECT
-FINAL`select`[]PROXY`[]DIRECT
-Apple`select`[]DIRECT`[]PROXY
-Microsoft`select`[]DIRECT`[]PROXY
-Telegram`select`[]Daily`[]VMESS`[]PROXY
-GlobalMedia`select`[]Daily`[]VMESS`[]PROXY
-GlobalGameDownload`select`[]DIRECT`[]VMESS`[]Daily`[]PROXY
+B1gProxy`select`[]Daily`[]Premium`[]Special`[]DIRECT
+FINAL`select`[]B1gProxy`[]DIRECT
+Apple`select`[]DIRECT`[]B1gProxy
+Microsoft`select`[]DIRECT`[]B1gProxy
+Telegram`select`[]Daily`[]VMESS`[]B1gProxy
+GlobalMedia`select`[]Daily`[]VMESS`[]B1gProxy
+GlobalGameDownload`select`[]DIRECT`[]VMESS`[]Daily`[]B1gProxy
 Hijacking`select`[]REJECT`[]DIRECT
