@@ -168,6 +168,18 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 #打开 APP, 访问下`我的`>`签到领红包`(左上角)
 3 0 * * * nzw9314/Task/elemSign.js
 
+# 招行信用卡(公众号) (By @iNotification)
+#招商银行信用卡微信公众号："领积分 - 签到领积分"
+5 0 * * * https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js
+
+# 52破解
+#浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
+2 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js
+
+# 电信营业厅
+#打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js
+
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
