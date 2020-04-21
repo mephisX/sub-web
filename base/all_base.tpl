@@ -78,14 +78,8 @@ server_check_url=http://bing.com/
 excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
 dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com
 geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubusercontent.com/xxxxxx/xxxxxxxxxxxx/raw/ipapi.js
-{% if exists("request.who") %}
-{% if request.who == "self" %}
-ssid_suspended_list = Ccccccc
-{% endif %}
-{% else %}
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
 ;ssid_suspended_list = LINK_22E174, LINK_22E175
-{% endif %}
 
 [dns]
 server=1.2.4.8
@@ -135,7 +129,7 @@ static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/I
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
 static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
 static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
-static=PROXY, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
+static=B1gProxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 static=FINAL, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 static=Apple, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 static=Microsoft, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
