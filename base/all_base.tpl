@@ -150,7 +150,7 @@ https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrit
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, enabled=true
 {% else %}
 https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_local_WorkingCopy.conf, tag=nzw9314, enabled=true
-https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf, tag=获取Cookie, enabled=true
+https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf, tag=获取Cookie, enabled=false
 {% endif %}
 
 [server_local]
