@@ -76,7 +76,7 @@ Request: who (self, lulu, tira, xty, biu, none)
 network_check_url=http://www.baidu.com/
 server_check_url=http://bing.com/
 excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
-dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com
+dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
 geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubusercontent.com/xxxxxx/xxxxxxxxxxxx/raw/ipapi.js
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
 ;ssid_suspended_list = LINK_22E174, LINK_22E175
@@ -85,6 +85,7 @@ geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubus
 server=1.2.4.8
 server=119.29.29.29
 server=223.5.5.5
+server=8.8.8.8
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
 server=/*.alipay.com/223.5.5.5
