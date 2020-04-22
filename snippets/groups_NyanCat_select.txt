@@ -12,8 +12,8 @@ SelectAU`select`.*(悉尼|澳大利亚).*$`[]B1gProxy
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`[]B1gProxy
 SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]B1gProxy
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]B1gProxy
-LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*香港.*$`[]Daily`http://clients3.google.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`[]Daily`http://clients3.google.com/generate_204`300
+LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*香港.*$`http://clients3.google.com/generate_204`300
+LowRateSGP`fallback`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`[]Daily`http://clients3.google.com/generate_204`300
 B1gProxy`select`[]Premium`[]Daily`[]Game`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
