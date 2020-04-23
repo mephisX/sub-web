@@ -3,17 +3,17 @@ Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|
 Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*((深圳|杭州) - (香港|新加坡|东京|硅谷)).*`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
 SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
-SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`[]B1gProxy
-SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`[]B1gProxy
-SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`[]B1gProxy
-SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`[]B1gProxy
-SelectSEA`select`.*(胡志明市|曼谷|孟买).*$`[]B1gProxy
-SelectAU`select`.*(悉尼|澳大利亚).*$`[]B1gProxy
-SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`[]B1gProxy
-SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]B1gProxy
-SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]B1gProxy
+SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`[]SelectHK
+SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`[]SelectHK
+SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
+SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`[]SelectHK
+SelectSEA`select`.*(胡志明市|曼谷|孟买).*$`[]SelectHK
+SelectAU`select`.*(悉尼|澳大利亚).*$`[]SelectHK
+SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`[]SelectHK
+SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS
+SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK
 LowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*香港.*$`http://clients3.google.com/generate_204`300
-LowRateSGP`fallback`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`[]Daily`http://clients3.google.com/generate_204`300
+LowRateSGP`fallback`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`[]LowRateHK`http://clients3.google.com/generate_204`300
 B1gProxy`select`[]Premium`[]Daily`[]Game`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
