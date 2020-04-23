@@ -1,8 +1,8 @@
 {# 
 Target : Clash, ClashR
-Request: dns (fake, tun, none)
+Request: dns (fake, tun, ,none)
          new_name (true, false)
-         wifi (true, false)
+         interface (none, wlan, other)
 #}
 {% if request.target == "clash" or request.target == "clashr" %}
 port: 7890
@@ -48,9 +48,13 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-{% if request.wifi == "true" %}
+{% if exists("request.interface") %}
+{% if request.interface == "none" %}
+{% endif %}
+{% if request.interface == "wlan" %}
 experimental:
   interface-name: WLAN
+{% endif %}
 {% else %}
 experimental:
   interface-name: 以太网
