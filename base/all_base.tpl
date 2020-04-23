@@ -1,6 +1,6 @@
 {# 
 Target : Clash, ClashR
-Request: dns (fake, tun, ,none)
+Request: dns (fake, tun, none)
          new_name (true, false)
          interface (none, wlan, other)
 #}
@@ -30,10 +30,14 @@ dns:
 {% if request.dns == "tun" %}
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
+  hosts:
+    'ip.jb.tn': 127.0.0.1
 {% endif %}
 {% else %}
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
+  hosts:
+    'ip.jb.tn': 127.0.0.1
 {% endif %}
   nameserver:
     - 1.2.4.8
@@ -77,11 +81,11 @@ Request: who (self, lulu, tira, xty, biu, none)
 #}
 {% if request.target == "quanx" %}
 [general]
-network_check_url=http://www.baidu.com/
-server_check_url=http://bing.com/
+network_check_url=http://bing.com/
+server_check_url=http://clients3.google.com/generate_204
 excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
 dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
-geo_location_checker=http://ip-api.com/json/?lang = zh-CN, https://gist.githubusercontent.com/xxxxxx/xxxxxxxxxxxx/raw/ipapi.js
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
 ;ssid_suspended_list = LINK_22E174, LINK_22E175
 
@@ -90,6 +94,7 @@ server=1.2.4.8
 server=119.29.29.29
 server=223.5.5.5
 server=8.8.8.8
+server=1.1.1.1
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
 server=/*.alipay.com/223.5.5.5
@@ -160,9 +165,9 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 [server_local]
 
 [task_local]
-# 什么值得买
-#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
-5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js
+# 52破解
+#浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
+2 0 * * * nzw9314/NobyDa/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js
 
 # 百度贴吧
 #打开App,访问下右下角 `我的
@@ -172,17 +177,17 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 #打开 APP, 访问下`我的`>`签到领红包`(左上角)
 3 0 * * * nzw9314/Task/elemSign.js
 
-# 招行信用卡(公众号) (By @iNotification)
-#招商银行信用卡微信公众号："领积分 - 签到领积分"
-5 0 * * * nzw9314/Task/cmbchina.js
-
-# 52破解
-#浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-2 0 * * * nzw9314/NobyDa/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js
-
 # 电信营业厅
 #打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
 1 0 * * * nzw9314/chavyleung/10000/10000.js
+
+# 什么值得买
+#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js
+
+# 招行信用卡(公众号) (By @iNotification)
+#招商银行信用卡微信公众号："领积分 - 签到领积分"
+5 0 * * * nzw9314/Task/cmbchina.js
 
 #TestFlight公测监控 (By @syzzzf)
 0 0-23/1 * * * nzw9314/Task/testflight.js
