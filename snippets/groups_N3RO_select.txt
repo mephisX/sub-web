@@ -1,7 +1,7 @@
 IPLC`select`.*IPLC.*
 BGP`select`.*BGP.*
 VMESS`select`.*(TCP|WS).*
-SelectHK`select`^(?!.*?(BGP|TCP|WS|京)).*港.*$`[]SelectHK
+SelectHK`select`^(?!.*?(BGP|TCP|WS|京)).*港.*$`[]IPLC
 SelectTW`select`.*(台湾|台).*$`[]SelectHK
 SelectKR`select`.*(韩国|韩).*$`[]SelectHK
 SelectJP`select`.*(日本|日).*$`[]SelectHK
