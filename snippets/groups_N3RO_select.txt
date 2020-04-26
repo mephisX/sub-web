@@ -11,13 +11,12 @@ SelectAU`select`.*(澳洲|澳).*$`[]SelectHK
 SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
 SelectCA`select`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`[]SelectUS
 SelectEU`select`.*(俄|德|英).*`[]SelectHK
-LowRateHK`url-test`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://clients3.google.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://clients3.google.com/generate_204`300
+LowRate`select`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`.*BGP [\x{4e00}-\x{9fa5}](俄|英).*
 B1gProxy`select`[]SelectHK`[]IPLC`[]BGP`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
-Telegram`select`[]LowRateSGP`[]VMESS`[]SelectSGP`[]B1gProxy
-GlobalMedia`select`[]LowRateHK`[]VMESS`[]SelectHK`[]B1gProxy
+Telegram`select`[]LowRate`[]VMESS`[]SelectSGP`[]B1gProxy
+GlobalMedia`select`[]LowRate`[]VMESS`[]SelectHK`[]B1gProxy
 GlobalGameDownload`select`[]DIRECT`[]VMESS`[]BGP`[]B1gProxy
 Hijacking`select`[]REJECT`[]DIRECT
