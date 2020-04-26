@@ -6,7 +6,7 @@ SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premi
 SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`[]SelectHK
 SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`[]SelectHK
 SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
-SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`[]SelectHK
+SelectSGP`select`^(?!.*?(Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`[]SelectHK
 SelectSEA`select`.*(胡志明市|曼谷|孟买).*$`[]SelectHK
 SelectAU`select`.*(悉尼|澳大利亚).*$`[]SelectHK
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`[]SelectHK
