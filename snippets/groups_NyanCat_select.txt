@@ -1,4 +1,4 @@
-Premium`fallback`.*(深圳 - 香港 [A-Z] #Premium).*`(上海 - 香港 [A-Z] #Premium).*`(新加坡 [A-Z] #Premium).*`http://clients3.google.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://clients3.google.com/generate_204`300
 Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
 Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*((深圳|杭州) - (香港|新加坡|东京|硅谷)).*`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
 VMESS`select`.*(TCP|WS).*
