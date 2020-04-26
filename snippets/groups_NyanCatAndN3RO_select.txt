@@ -13,7 +13,7 @@ SelectAU`select`.*(悉尼|澳大利亚).*$`[]SelectHK
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`[]SelectHK
 SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK
-LowRate`select`.*BGP [\x{4e00}-\x{9fa5}]新.*`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*香港.*$`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Europe.*$`.*BGP [\x{4e00}-\x{9fa5}](俄|英).*
+LowRate`select`^(?!.*?(IPLC|TCP|WS|京)).*[\x{4e00}-\x{9fa5}]新.*$`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*新加坡.*$`^(?!.*?(Premium|Game|Fullcone|TCP|WS|北京)).*香港.*$`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Europe.*$`.*BGP [\x{4e00}-\x{9fa5}](俄|英).*
 B1gProxy`select`[]N3RO`[]Daily`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
