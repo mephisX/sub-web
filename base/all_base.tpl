@@ -21,11 +21,15 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - "*.lan"
-    - "localhost.ptlogin2.qq.com"
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+    - '*.*.*.*.srv.nintendo.net'
+    - '*.*.*.stun.playstation.net'
+    - 'xbox.*.microsoft.com'
+    - '*.*.*.xboxlive.com'
 {% endif %}
 {% if request.dns == "tun" %}
   listen: 0.0.0.0:53
@@ -139,6 +143,7 @@ static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/I
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
 static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
 static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
+static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=B1gProxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 static=FINAL, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 static=Apple, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
