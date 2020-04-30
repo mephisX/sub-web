@@ -60,12 +60,8 @@ dns:
 {% if request.interface == "none" %}
 {% endif %}
 {% if request.interface == "wlan" %}
-experimental:
-  interface-name: WLAN
 {% endif %}
 {% else %}
-experimental:
-  interface-name: 以太网
 {% endif %}
 {% if request.new_name == "true" %}
 proxies: ~
