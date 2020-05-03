@@ -2,9 +2,9 @@ Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(�
 Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
 Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*((深圳|杭州) - (香港|新加坡|东京|硅谷)).*`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
 N3RO`fallback`.*IPLC 深港.*`.*IPLC 沪港.*`.*IPLC (深|新)新.*`http://clients3.google.com/generate_204`300
-VMESS`select`.*(TCP|WS).*
+VMESS`select`.*TCP 直连 - 香港 γ.*`.*(TCP|WS).*
 SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
-SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`[]SelectHK
+SelectTW`select`^(?!.*?(Daily|TCP|WS)).*台北.*$`[]SelectHK
 SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`[]SelectHK
 SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
 SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Premium|Daily|TCP|WS)).*新加坡.*$`[]SelectHK
