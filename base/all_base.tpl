@@ -87,7 +87,7 @@ excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.6
 dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
-;ssid_suspended_list = LINK_22E174, LINK_22E175
+running_mode_trigger=filter, filter, Cccccc:all_direct
 
 [dns]
 server=1.2.4.8
