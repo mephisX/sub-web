@@ -234,6 +234,47 @@ p12 = MIIJKQIBAzCCCO8GCSqGSIb3DQEHAaCCCOAEggjcMIII2DCCA48GCSqGSIb3DQEHBqCCA4Awgg
 
 
 {% if request.target == "mellow" %}
+[Endpoint]
+Direct, builtin, freedom, domainStrategy=UseIP
+Reject, builtin, blackhole
+Dns-Out, builtin, dns
+Http-Out, builtin, http, address=127.0.0.1, port=7890
+Socks-Out, builtin, socks, address=127.0.0.1, port=7891
+
+[Routing]
+domainStrategy = IPIfNonMatch
+
+[RoutingRule]
+; type, filter, endpoint tag or enpoint group tag
+; DNS
+IP-CIDR, 223.5.5.5/32, Direct
+IP-CIDR, 8.8.8.8/32, B1gProxy
+IP-CIDR, 8.8.4.4/32, B1gProxy
+
+[Dns]
+; hijack = dns endpoint tag
+hijack = Dns-Out
+clientIp = 114.114.114.114
+
+[DnsServer]
+; address, port, tag
+223.5.5.5
+8.8.8.8, 53, GoogleDNS
+8.8.4.4
+
+[DnsRule]
+; type, filter, dns server tag
+DOMAIN-KEYWORD, geosite:geolocation-!cn, GoogleDNS
+DOMAIN, www.google.com, GoogleDNS
+DOMAIN-FULL, www.twitter.com, GoogleDNS
+DOMAIN-SUFFIX, google.com, GoogleDNS
+
+[DnsHost]
+; domain = ip
+localhost = 127.0.0.1
+
+[Log]
+loglevel = warning
 {% endif %}
 
 
