@@ -12,7 +12,7 @@ SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
 SelectCA`fallback`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
 SelectEU`select`.*(俄|德|英).*`[]SelectHK
 LowRateAuto`url-test`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`.*BGP [\x{4e00}-\x{9fa5}](俄|英).*`http://cp.cloudflare.com/generate_204`300
-B1gProxy`select`[]SelectHK`[]IPLC`[]BGP`[]DIRECT
+B1gProxy`select`[]IPLC`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
