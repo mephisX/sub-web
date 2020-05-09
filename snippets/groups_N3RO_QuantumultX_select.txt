@@ -19,6 +19,6 @@ Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]DIRECT
 Telegram`select`[]LowRateSGP`[]VMESS`[]SelectSGP`[]B1gProxy
 Netflix`select`[]LowRateSGP`[]VMESS`[]BGP`[]B1gProxy
-GlobalMedia`select`[]LowRateHK`[]VMESS`[]BGP`[]B1gProxy
+GlobalMedia`select`[]LowRate`[]VMESS`[]BGP`[]B1gProxy
 GlobalGameDownload`select`[]DIRECT`[]VMESS`[]BGP`[]B1gProxy
 Hijacking`select`[]REJECT`[]DIRECT
