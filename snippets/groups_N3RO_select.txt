@@ -12,13 +12,13 @@ SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
 SelectCA`fallback`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
 SelectEU`select`.*(俄|德|英).*`[]SelectHK
 LowRate`url-test`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://cp.cloudflare.com/generate_204`300
-LowRateSPG`url-test`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
+LowRateSGP`url-test`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
 B1gProxy`select`[]IPLC`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
-Telegram`select`[]LowRateSPG`[]VMESS`[]SelectSGP`[]B1gProxy
-Netflix`select`[]LowRateSPG`[]VMESS`[]Daily`[]B1gProxy
+Telegram`select`[]LowRateSGP`[]VMESS`[]SelectSGP`[]B1gProxy
+Netflix`select`[]LowRateSGP`[]VMESS`[]Daily`[]B1gProxy
 GlobalMedia`select`[]LowRate`[]VMESS`[]BGP`[]B1gProxy
 GlobalGameDownload`select`[]DIRECT`[]VMESS`[]BGP`[]B1gProxy
 Hijacking`select`[]REJECT`[]DIRECT
