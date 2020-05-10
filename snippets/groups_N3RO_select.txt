@@ -1,4 +1,4 @@
-IPLC`url-test`.*IPLC 深港.*`.*IPLC 沪港.*`.*IPLC.*`http://cp.cloudflare.com/generate_204`300
+IPLC`load-balance`.*IPLC 深港.*`.*IPLC 沪港.*`.*IPLC.*`http://cp.cloudflare.com/generate_204`300
 BGP`select`.*BGP.*
 VMESS`select`.*TCP 优化 - 香港 γ.*`.*(TCP|WS).*
 SelectHK`select`^(?!.*?(BGP|TCP|WS|京)).*港.*$`[]IPLC
