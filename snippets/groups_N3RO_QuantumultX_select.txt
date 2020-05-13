@@ -11,8 +11,8 @@ SelectAU`fallback`.*(澳洲|澳).*$`^(?!.*?(BGP|TCP|WS)).*新.*$`http://cp.cloud
 SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
 SelectCA`fallback`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`^(?!.*?(BGP|TCP|WS)).*美.*$`http://cp.cloudflare.com/generate_204`300
 SelectEU`select`.*(俄|德|英).*`[]SelectHK
-LowRate`url-test`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://cp.cloudflare.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
+LowRate`url-test`.*BGP 苏港.*`.*BGP 穗港.*`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://cp.cloudflare.com/generate_204`300
+LowRateSGP`url-test`.*BGP 苏新.*`.*BGP 穗新.*`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
 B1gProxy`select`[]IPLC`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
