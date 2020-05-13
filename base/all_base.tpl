@@ -84,7 +84,7 @@ Request: who (self, lulu, tira, xty, biu, none)
 network_check_url=http://bing.com/
 server_check_url=http://cp.cloudflare.com/generate_204
 excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
-dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.abchina.com
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
 running_mode_trigger=filter, filter, Cccccc:all_direct
