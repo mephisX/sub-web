@@ -137,14 +137,15 @@ static=SelectAU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/I
 static=SelectUS, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
 static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Canada.png
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
-static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
-static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
+static=LowRate, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
+static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=B1gProxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 static=FINAL, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 static=Apple, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 static=Microsoft, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
 static=Telegram, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=Netflix, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png
 static=GlobalMedia, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
 static=GlobalGameDownload, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Download.png
 static=Hijacking, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hijacking.png
