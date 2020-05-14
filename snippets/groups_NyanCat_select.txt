@@ -18,8 +18,8 @@ B1gProxy`select`[]Premium`[]Daily`[]Game`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
-Telegram`select`[]LowRateSGP`[]VMESS`[]Daily`[]B1gProxy
-Netflix`select`[]LowRateSGP`[]VMESS`[]Daily`[]B1gProxy
-GlobalMedia`select`[]LowRate`[]VMESS`[]Daily`[]B1gProxy
-GlobalGameDownload`select`[]DIRECT`[]VMESS`[]Daily`[]B1gProxy
+Telegram`select`[]LowRateSGP`[]VMESS`[]B1gProxy`[]DIRECT
+Netflix`select`[]LowRateSGP`[]VMESS`[]Daily`[]DIRECT
+GlobalMedia`select`[]LowRate`[]VMESS`[]Daily`[]DIRECT
+GlobalGameDownload`select`[]DIRECT`[]VMESS`[]Daily`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
