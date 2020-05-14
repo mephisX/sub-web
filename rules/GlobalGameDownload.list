@@ -1,15 +1,24 @@
 # LOL TW download
-DOMAIN,loltw.qcloud.gpipe.garenanow.com
-DOMAIN,loltw.cdn.gpipe.garenanow.com
+DOMAIN-SUFFIX,loltw.qcloud.gpipe.garenanow.com
+DOMAIN-SUFFIX,loltw.cdn.gpipe.garenanow.com
 # 暴雪战网下载 akamaihd CDN
-DOMAIN,blzddist1-a.akamaihd.net
-DOMAIN,blzddistkr1-a.akamaihd.net
+DOMAIN-SUFFIX,blzddist1-a.akamaihd.net
+DOMAIN-SUFFIX,blzddistkr1-a.akamaihd.net
 # 暴雪战网下载 level3 CDN
-DOMAIN,level3.blizzard.com
+DOMAIN-SUFFIX,level3.blizzard.com
+# 暴雪战网下载 level3 CDN
+DOMAIN-SUFFIX,blizzard.nefficient.co.kr
 # sony playstation
 DOMAIN-SUFFIX,gs2.sonycoment.loris-e.llnwd.net
 DOMAIN-SUFFIX,dl.playstation.net
 DOMAIN-SUFFIX,ps4.update.playstation.net
-#彩虹六号
+# 彩虹六号
 DOMAIN-SUFFIX,r6pcaddons.azureedge.net
 DOMAIN-SUFFIX,r6statuspc.azureedge.net
+# R星
+DOMAIN-SUFFIX,gamedownloads.rockstargames.com
+DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
+# EA平台 level3 CDN
+DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com
+# EA平台 akamaihd CDN
+DOMAIN-SUFFIX,origin-a.akamaihd.net
