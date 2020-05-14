@@ -1,0 +1,11 @@
+#R6
+DOMAIN-SUFFIX,r6s1.battleye.com
+DOMAIN-SUFFIX,lb-rdv-r6-pc.ubisoft.com
+#ubi
+DOMAIN-SUFFIX,cdn.prod.r6.ubi.com
+DOMAIN-SUFFIX,sigma.ubi.com
+DOMAIN-SUFFIX,msr-public-ubiservices.ubi.com
+DOMAIN-SUFFIX,public-ubiservices.ubi.com
+DOMAIN-SUFFIX,ubiservices.cdn.ubi.com
+DOMAIN-SUFFIX,ubisoft-avatars.akamaized.net
+DOMAIN-SUFFIX,ubistatic3-a.akamaihd.net
