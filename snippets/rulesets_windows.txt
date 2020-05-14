@@ -6,6 +6,7 @@ SelectKR,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/COD16.li
 SelectTW,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/LOLTW.list
 SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/Rockstar.list
 SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/GranTurismo.list
+SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/ubi.list
 Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
 GlobalMedia,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 Telegram,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
