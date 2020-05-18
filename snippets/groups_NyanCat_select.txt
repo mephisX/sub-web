@@ -19,6 +19,6 @@ Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]DIRECT`[]B1gProxy
 Telegram`select`[]LowRateSGP`[]VMESS`[]B1gProxy
 Netflix`select`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
-GlobalMedia`select`[]LowRateHK`[]VMESS`(香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
+GlobalMedia`select`[]LowRateHK`[]VMESS`((深圳|上海) -香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
 GlobalGameDownload`select`[]DIRECT`[]VMESS
 Hijacking`select`[]REJECT`[]DIRECT
