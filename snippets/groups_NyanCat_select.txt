@@ -2,7 +2,7 @@ Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(�
 Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
 Daily`select`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*((深圳|杭州) - (香港|新加坡|东京|硅谷)).*`^(?!.*?(Premium|Game|Fullcone|TCP|WS)).*Daily.*$
 VMESS`select`.*TCP 优化 - 香港 γ.*`.*(TCP|WS).*
-SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
+SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
 SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]SelectHK
 SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]SelectHK
 SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
