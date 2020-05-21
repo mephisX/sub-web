@@ -36,7 +36,9 @@ DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 # > vcb-s
 DOMAIN-SUFFIX,vcb-s.com
-# > csgo hvh
+# > csgo hvh server
 DOMAIN-SUFFIX,linkhvh.com
 # > Epicgames
 DOMAIN-SUFFIX,ol.epicgames.com
+# > Rockstar hack
+DOMAIN-SUFFIX,impulse.one
