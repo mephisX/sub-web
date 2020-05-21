@@ -213,7 +213,6 @@ https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/
 {% endif %}
 {% else %}
 {% endif %}
-{% endif %}
 
 [server_local]
 
