@@ -9,8 +9,6 @@ DOMAIN-SUFFIX,prod.cloud.rockstargames.com
 # GTA V
 DOMAIN-SUFFIX,prod.telemetry.ros.rockstargames.com
 DOMAIN-SUFFIX,patches.rockstargames.com
-# Rockstar hack
-DOMAIN-SUFFIX,impulse.one
 # Rockstar Final
 DOMAIN-SUFFIX,rockstargames.com
 DOMAIN-SUFFIX,a.rsg.sc
