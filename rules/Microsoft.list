@@ -1,0 +1,18 @@
+# XBOX LIVE
+DOMAIN-SUFFIX,profile.xboxlive.com
+DOMAIN-SUFFIX,rta.xboxlive.com
+DOMAIN-SUFFIX,gameserverds.xboxlive.com
+DOMAIN-SUFFIX,sessiondirectory.xboxlive.com
+DOMAIN-SUFFIX,social.xboxlive.com
+DOMAIN-SUFFIX,notify.xboxlive.com
+DOMAIN-SUFFIX,userpresence.xboxlive.com
+DOMAIN-SUFFIX,images-eds-ssl.xboxlive.com
+DOMAIN-SUFFIX,peoplehub.xboxlive.com
+DOMAIN-SUFFIX,achievements.xboxlive.com
+DOMAIN-SUFFIX,privacy.xboxlive.com
+# OneDirve
+DOMAIN-SUFFIX,bn1301.storage.live.com
+# Xbox Cloud Sync
+DOMAIN-SUFFIX,titlestorage.xboxlive.com
+# Microsoft Store Images
+DOMAIN-SUFFIX,store-images.s-microsoft.com
