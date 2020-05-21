@@ -1,4 +1,4 @@
-# LOL TW download
+# Garena LOL TW download
 DOMAIN-SUFFIX,loltw.qcloud.gpipe.garenanow.com
 DOMAIN-SUFFIX,loltw.cdn.gpipe.garenanow.com
 # 暴雪战网下载 akamaihd CDN
@@ -22,3 +22,6 @@ DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
 DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com
 # EA平台 akamaihd CDN
 DOMAIN-SUFFIX,origin-a.akamaihd.net
+# 微软
+DOMAIN-SUFFIX,xvcf1.xboxlive.com
+DOMAIN-SUFFIX,xvcf2.xboxlive.com
