@@ -199,9 +199,16 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
+{% if exists("request.who") %}
+{% if request.who == "tira" %}
+# TikTok US unblock
+(?<=(carrier|sys)_region=)CN url 307 CF
+(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
+{% endif %}
 # TikTok US unblock
 (?<=(carrier|sys)_region=)CN url 307 JP
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
+{% endif %}
 
 [mitm]
 {% if exists("request.who") %}
