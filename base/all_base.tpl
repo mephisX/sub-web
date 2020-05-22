@@ -163,7 +163,6 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=
 https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_local_WorkingCopy.conf, tag=nzw9314, enabled=true
 https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf, tag=获取Cookie, enabled=false
 {% endif %}
-
 [server_local]
 
 [task_local]
@@ -200,6 +199,9 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
+# TikTok US unblock
+(?<=(carrier|sys)_region=)CN url 307 JP
+(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 
 [mitm]
 {% if exists("request.who") %}
