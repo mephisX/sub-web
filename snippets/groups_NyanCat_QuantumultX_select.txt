@@ -13,12 +13,13 @@ SelectCA`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`^(?!.*?(Premium|D
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK
 LowRateHK`select`.*TCP 优化 - 香港 δ.*`^(?!.*?(Premium|Game|Fullcone)).*香港.*$
 LowRateSGP`select`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$
+LowRateNA`select`^(?!.*?(Premium|Game|Fullcone)).*North America.*$
 B1gProxy`select`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]DIRECT
 Telegram`select`[]LowRateSGP`[]VMESS`[]B1gProxy
-Netflix`select`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
+Netflix`select`[]LowRateSGP`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
 GlobalMedia`select`[]LowRateHK`[]VMESS`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
 GlobalGameDownload`select`[]DIRECT`[]VMESS
 Hijacking`select`[]REJECT`[]DIRECT
