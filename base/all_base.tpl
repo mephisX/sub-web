@@ -144,7 +144,9 @@ static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/I
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
 static=LowRate, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
+static=LowRateTW, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=LowRateSGP, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
+static=LowRateNA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=B1gProxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 static=FINAL, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 static=Apple, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
