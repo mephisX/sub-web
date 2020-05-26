@@ -118,6 +118,11 @@ server=/*.discord.media/8.8.4.4
 server=/*.discord.gg/8.8.4.4
 server=/*.google.com/8.8.8.8
 server=/*.twitter.com/8.8.8.8
+{% if exists("request.who") %}
+{% if request.who == "self" %}
+server=192.168.123.1
+{% endif %}
+{% endif %}
 
 [policy]
 static=IPLC, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IPLC.png
@@ -200,9 +205,9 @@ final, Final
 
 [rewrite_local]
 {% if exists("request.who") %}
-{% if request.who == "tira" %}
+{% if request.who == "biu" %}
 # TikTok US unblock
-(?<=(carrier|sys)_region=)CN url 307 CF
+(?<=(carrier|sys)_region=)CN url 307 RU
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 {% endif %}
 # TikTok US unblock
