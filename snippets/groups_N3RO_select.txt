@@ -20,6 +20,6 @@ Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]DIRECT
 Telegram`select`[]LowRateSGP`[]SelectSGP`[]VMESS
 Netflix`select`[]LowRateSGP`[]SelectTW`[]BGP`[]VMESS
-GlobalMedia`select`[]LowRate`[]BGP`[]VMESS
+GlobalMedia`select`[]LowRateHK`[]BGP`[]VMESS
 GlobalGameDownload`select`[]BGP`[]DIRECT`[]VMESS
 Hijacking`select`[]REJECT`[]DIRECT
