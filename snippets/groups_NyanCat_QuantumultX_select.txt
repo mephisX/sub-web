@@ -20,8 +20,8 @@ B1gProxy`select`[]Premium`[]Game`[]VMESS`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]LowRateHK`[]DIRECT
-Telegram`select`[]LowRateSGP`[]VMESS`[]B1gProxy
-Netflix`select`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
-GlobalMedia`select`[]LowRateHK`[]LowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
+Telegram`select`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateSGP`[]VMESS
+Netflix`select`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateSGP`[]LowRateTW`[]LowRateNA
+GlobalMedia`select`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateHK`[]LowRateNA
 GlobalGameDownload`select`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
