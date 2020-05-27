@@ -10,7 +10,8 @@ SelectSEA`fallback`.*(印|印度).*$`^(?!.*?(BGP|TCP|WS)).*新.*$`http://cp.clou
 SelectAU`fallback`.*(澳洲|澳).*$`^(?!.*?(BGP|TCP|WS)).*新.*$`http://cp.cloudflare.com/generate_204`300
 SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
 SelectCA`fallback`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`^(?!.*?(BGP|TCP|WS)).*美.*$`http://cp.cloudflare.com/generate_204`300
-SelectEU`select`.*(俄|德|英).*`[]SelectHK
+SelectRU`select`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`[]SelectEU
+SelectEU`select`.*(德|英).*`[]SelectHK
 LowRate`url-test`^(?!.*?(IPLC|TCP|WS|京|沪|鲁|浙)).*HKT.*$`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://cp.cloudflare.com/generate_204`300
 LowRateSGP`url-test`.*BGP 苏新.*`.*BGP 穗新.*`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
 B1gProxy`select`[]IPLC`[]BGP`[]VMESS`[]DIRECT
