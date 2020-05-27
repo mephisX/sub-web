@@ -21,7 +21,7 @@ B1gProxy`select`[]N3RO`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]DIRECT
-Telegram`select`[]LowRateSGP`[]B1gProxy
+Telegram`select`[]LowRateSGP`[]VMESS`[]B1gProxy
 Netflix`select`[]LowRateSGP`[]LowRateTW`[]LowRateNA
 GlobalMedia`select`[]LowRateHK`[]VMESS
 GlobalGameDownload`select`[]VMESS`[]DIRECT
