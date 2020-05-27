@@ -76,10 +76,12 @@ WS:@WS
 ( |-)(10|J)@ κ
 ( |-)(11|K)@ λ
 ( |-)(12|L)@ μ
-!!GROUPID=0!!HKT (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ)@ $1 #HKT
-!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](港|新|台|日|韩|印) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Premium #Asia #N3RO
-!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](港|新|台|日|韩|印) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Daily #Asia #N3RO
-!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](美|加) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Premium #North America #N3RO
-!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](美|加) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Daily #North America #N3RO
-!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](英|法|德|俄) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Premium #Europe #N3RO
-!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](英|法|德|俄) (α|β|γ|δ|ε|ζ|η||θ|ι|κ|λ|μ))@$1 #Daily #Europe #N3RO
+!!GROUPID=0!!HKT (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ)@ $1 #HKT
+!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](港|新|台|日|韩|印) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Premium #Asia #N3RO
+!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](港|新|台|日|韩|印) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Daily #Asia #N3RO
+!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](美|加) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Premium #North America #N3RO
+!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](美|加) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Daily #North America #N3RO
+!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}](英|法|德|俄) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Premium #Europe #N3RO
+!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}](英|法|德|俄) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Daily #Europe #N3RO
+!!GROUPID=0!!.*(IPLC [\x{4e00}-\x{9fa5}]澳 (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Premium #Oceania #N3RO
+!!GROUPID=0!!.*(BGP [\x{4e00}-\x{9fa5}]澳 (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ))@$1 #Daily #Oceania #N3RO
