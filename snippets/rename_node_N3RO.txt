@@ -1,6 +1,6 @@
 !!GROUPID=0!!专线@IPLC
 !!GROUPID=0!!中继@BGP
-!!GROUPID=0!!@-
+!!GROUPID=0!!→@-
 !!GROUPID=0!!联通@
 !!GROUPID=0!!双线@
 \(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?@$1x
