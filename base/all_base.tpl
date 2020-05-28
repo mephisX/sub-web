@@ -87,7 +87,12 @@ excluded_routes=192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.6
 dns_exclusion_list = *.cmpassport.com,  *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.abchina.com
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
+{% if exists("request.who") %}
+{% if request.who == "self" %}
 running_mode_trigger=filter, filter, Cccccc:all_direct
+{% endif %}
+;ssid_suspended_list=LINK_22E174, LINK_22E175
+{% endif %}
 
 [dns]
 server=1.2.4.8
@@ -122,6 +127,8 @@ server=/*.twitter.com/8.8.8.8
 {% if request.who == "self" %}
 server=192.168.123.1
 {% endif %}
+server=192.168.1.1
+server=192.168.0.1
 {% endif %}
 
 [policy]
@@ -141,6 +148,7 @@ static=SelectSEA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/
 static=SelectAU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IPLC.png
 static=SelectUS, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
 static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Canada.png
+static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Russia.png
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
 static=LowRate, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
