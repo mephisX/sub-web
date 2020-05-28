@@ -1,25 +1,25 @@
-IPLC`url-test`.*IPLC 深港.*`.*IPLC 沪港.*`.*IPLC.*`http://cp.cloudflare.com/generate_204`300
-BGP`select`.*BGP.*
-VMESS`select`.*TCP 优化 - 香港 δ.*`.*(TCP|WS).*
-SelectHK`select`^(?!.*?(BGP|TCP|WS|京)).*港.*$`[]IPLC
-SelectTW`select`.*(台湾|台).*$`[]SelectHK
-SelectKR`select`.*(韩国|韩).*$`[]SelectHK
-SelectJP`select`.*(沪(日本|日)).*$`.*(日本|日).*$`[]SelectHK
-SelectSGP`select`^(?!.*?(BGP|TCP|WS)).*新.*$`[]SelectHK
-SelectSEA`fallback`.*(印|印度).*$`^(?!.*?(BGP|TCP|WS)).*新.*$`http://cp.cloudflare.com/generate_204`300
-SelectAU`fallback`.*(澳洲|澳).*$`^(?!.*?(BGP|TCP|WS)).*新.*$`http://cp.cloudflare.com/generate_204`300
-SelectUS`select`^(?!.*?(BGP|TCP|WS)).*美.*$`[]SelectHK
-SelectCA`fallback`^(?!.*?(BGP|TCP|WS)).*(加拿大|多伦多).*$`^(?!.*?(BGP|TCP|WS)).*美.*$`http://cp.cloudflare.com/generate_204`300
-SelectRU`select`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`[]SelectEU
-SelectEU`select`.*(德|英).*`[]SelectHK
-LowRate`url-test`^(?!.*?(IPLC|TCP|WS|京|沪|鲁|浙)).*HKT.*$`^(?!.*?(IPLC|TCP|WS|京)).*港.*$`http://cp.cloudflare.com/generate_204`300
-LowRateSGP`url-test`.*BGP 苏新.*`.*BGP 穗新.*`^(?!.*?(IPLC|TCP|WS|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
-B1gProxy`select`[]IPLC`[]BGP`[]VMESS`[]DIRECT
+Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
+BGP`select`.*Daily.*
+VMESS`select`.*TCP 优化 - 香港 ε.*`.*(TCP|WS).*
+SelectHK`fallback`^(?!.*?(Daily|京)).*港.*$`[]Premium`http://cp.cloudflare.com/generate_204`300
+SelectTW`fallback`.*台.*$`http://cp.cloudflare.com/generate_204`300
+SelectKR`fallback`^(?!.*?(Daily|京)).*韩.*$^.*韩.*$`[]SelectJP`http://cp.cloudflare.com/generate_204`300
+SelectJP`url-test`^(?!.*?(Daily|京)).*日.*$`^.*日.*$`http://cp.cloudflare.com/generate_204`300
+SelectSGP`fallback`^(?!.*?(Daily|京)).*新.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+SelectSEA`fallback`.*(印|印度).*$`[]SelectSGP`http://cp.cloudflare.com/generate_204`300
+SelectAU`fallback`.*(澳洲|澳).*$`[]SelectSGP`http://cp.cloudflare.com/generate_204`300
+SelectRU`fallback`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`[]SelectEU`http://cp.cloudflare.com/generate_204`300
+SelectEU`fallback`^(?!.*?Daily).*德.*$`.*(德|英|法).*`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+SelectCA`fallback`^(?!.*?(Daily|京)).*加.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
+SelectUS`fallback`^(?!.*?(Daily|京)).*美.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+LowRateHK`url-test`.*TCP 优化 - 香港 ε.*`^(?!.*?(Premium|京)).*HKT.*$`http://cp.cloudflare.com/generate_204`300
+LowRateSGP`url-test`^(?!.*?(Premium|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
+B1gProxy`select`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]DIRECT
 Telegram`select`[]LowRateSGP`[]VMESS`[]SelectSGP`[]B1gProxy
 Netflix`select`[]LowRateSGP`[]VMESS`[]BGP`[]B1gProxy
-GlobalMedia`select`[]LowRate`[]VMESS`[]BGP`[]B1gProxy
+GlobalMedia`select`[]LowRateHK`[]VMESS`[]BGP`[]B1gProxy
 GlobalGameDownload`select`[]DIRECT`[]VMESS`[]BGP`[]B1gProxy
 Hijacking`select`[]REJECT`[]DIRECT
