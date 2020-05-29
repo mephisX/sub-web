@@ -90,7 +90,6 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 {% if exists("request.who") %}
 {% if request.who == "self" %}
 running_mode_trigger=filter, filter, Cccccc:all_direct
-{% endif %}
 {% else %}
 ;ssid_suspended_list=LINK_22E174, LINK_22E175
 {% endif %}
@@ -127,7 +126,6 @@ server=/*.twitter.com/8.8.8.8
 {% if exists("request.who") %}
 {% if request.who == "self" %}
 server=192.168.123.1
-{% endif %}
 {% else %}
 server=192.168.1.1
 server=192.168.0.1
@@ -218,12 +216,8 @@ final, Final
 [rewrite_local]
 # TikTok unblock
 {% if exists("request.who") %}
-{% if request.who == "tira" %}
-(?<=(carrier|sys)_region=)CN url 307 KR
-{% endif %}
 {% if request.who == "biu" %}
 (?<=(carrier|sys)_region=)CN url 307 RU
-{% endif %}
 {% else %}
 (?<=(carrier|sys)_region=)CN url 307 JP
 {% endif %}
