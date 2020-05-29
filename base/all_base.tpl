@@ -36,6 +36,8 @@ dns:
   enhanced-mode: redir-host
   hosts:
     'ip.jb.tn': 127.0.0.1
+    'p33-smtp.mail.icloud.com.cn': 17.56.8.137
+    'p33-imap.mail.icloud.com.cn': 17.56.9.15
 {% endif %}
 {% else %}
   listen: 0.0.0.0:53
