@@ -93,6 +93,7 @@ running_mode_trigger=filter, filter, Cccccc:all_direct
 {% else %}
 ;ssid_suspended_list=LINK_22E174, LINK_22E175
 {% endif %}
+{% endif %}
 
 [dns]
 server=1.2.4.8
@@ -129,6 +130,7 @@ server=192.168.123.1
 {% else %}
 server=192.168.1.1
 server=192.168.0.1
+{% endif %}
 {% endif %}
 
 [policy]
@@ -220,6 +222,7 @@ final, Final
 (?<=(carrier|sys)_region=)CN url 307 RU
 {% else %}
 (?<=(carrier|sys)_region=)CN url 307 JP
+{% endif %}
 {% endif %}
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 
