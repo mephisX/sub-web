@@ -216,17 +216,19 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
-{% if exists("request.who") %}
-{% if request.who == "biu" %}
 # TikTok US unblock
-(?<=(carrier|sys)_region=)CN url 307 RU
+{% if exists("request.who") %}
+{% if request.who == "tira" %}
+(?<=(carrier|sys)_region=)CN url 307 KR
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
+{% endif %}
+{% if request.who == "biu" %}
+(?<=(carrier|sys)_region=)CN url 307 RU
 {% endif %}
 {% else %}
-# TikTok US unblock
 (?<=(carrier|sys)_region=)CN url 307 JP
-(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 {% endif %}
+(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 
 [mitm]
 {% if exists("request.who") %}
