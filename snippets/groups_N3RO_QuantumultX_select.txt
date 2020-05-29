@@ -1,19 +1,19 @@
-Premium`Available`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
 BGP`select`.*Daily.*
 VMESS`select`.*TCP 优化 - 香港 ε.*`.*(TCP|WS).*
-SelectHK`Available`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
-SelectTW`Available`^(?!.*?(Daily|京)).*台湾.*$`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
-SelectKR`Available`^(?!.*?(Daily|京)).*韩国.*$`^(?!.*?(Daily|京)).*日本.*$`^.*日本.*$`http://cp.cloudflare.com/generate_204`300
-SelectJP`Available`^(?!.*?(Daily|京)).*日本.*$`^.*日本.*$`http://cp.cloudflare.com/generate_204`300
-SelectSGP`Available`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
-SelectSEA`Available`.*(印|印度).*$`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
-SelectAU`Available`.*(澳洲|澳).*$`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
-SelectRU`Available`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`^(?!.*?Daily).*德.*$`.*(德|英|法).*`http://cp.cloudflare.com/generate_204`300
-SelectEU`Available`^(?!.*?Daily).*德.*$`.*(德|英|法).*`http://cp.cloudflare.com/generate_204`300
-SelectCA`Available`^(?!.*?(Daily|京)).*加拿大.*$`^(?!.*?(Daily|京)).*美国.*$`http://cp.cloudflare.com/generate_204`300
-SelectUS`Available`^(?!.*?(Daily|京)).*美国.*$`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
-LowRateHK`Available`.*TCP 优化 - 香港 (γ|δ|ε).*`^(?!.*?(Premium|京)).*HKT.*$`http://cp.cloudflare.com/generate_204`300
-LowRateSGP`Available`^(?!.*?(Premium|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
+SelectHK`fallback`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
+SelectTW`fallback`^(?!.*?(Daily|京)).*台湾.*$`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
+SelectKR`fallback`^(?!.*?Daily).*韩国.*$`^(?!.*?(Daily|京)).*日本.*$`^.*日本.*$`http://cp.cloudflare.com/generate_204`300
+SelectJP`fallback`^(?!.*?(Daily|京)).*日本.*$`^.*日本.*$`http://cp.cloudflare.com/generate_204`300
+SelectSGP`fallback`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
+SelectSEA`fallback`.*(印|印度).*$`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
+SelectAU`fallback`.*(澳洲|澳).*$`^(?!.*?(Daily|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
+SelectRU`fallback`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`^(?!.*?Daily).*德.*$`.*(德|英|法).*`http://cp.cloudflare.com/generate_204`300
+SelectEU`fallback`^(?!.*?Daily).*德.*$`.*(德|英|法).*`http://cp.cloudflare.com/generate_204`300
+SelectCA`fallback`^(?!.*?(Daily|京)).*加拿大.*$`^(?!.*?(Daily|京)).*美国.*$`http://cp.cloudflare.com/generate_204`300
+SelectUS`fallback`^(?!.*?(Daily|京)).*美国.*$`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
+LowRateHK`fallback`.*TCP 优化 - 香港 (γ|δ|ε).*`^(?!.*?(Premium|京)).*HKT.*$`http://cp.cloudflare.com/generate_204`300
+LowRateSGP`fallback`^(?!.*?(Premium|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
 B1gProxy`select`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
