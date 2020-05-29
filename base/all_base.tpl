@@ -216,7 +216,7 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
-# TikTok US unblock
+# TikTok unblock
 {% if exists("request.who") %}
 {% if request.who == "tira" %}
 (?<=(carrier|sys)_region=)CN url 307 KR
