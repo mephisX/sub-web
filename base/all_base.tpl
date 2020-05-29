@@ -220,7 +220,6 @@ final, Final
 {% if exists("request.who") %}
 {% if request.who == "tira" %}
 (?<=(carrier|sys)_region=)CN url 307 KR
-(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 {% endif %}
 {% if request.who == "biu" %}
 (?<=(carrier|sys)_region=)CN url 307 RU
