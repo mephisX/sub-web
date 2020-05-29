@@ -225,8 +225,11 @@ final, Final
 {% endif %}
 {% endif %}
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
+# 知乎不跳转
+^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
 [mitm]
+hostname = www.zhihu.com
 {% if exists("request.who") %}
 {% if request.who == "self" %}
 passphrase = FA1A9849
