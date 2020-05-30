@@ -1,8 +1,9 @@
 # NoCdnEU
 # 大名鼎鼎的 speedrun
 DOMAIN-SUFFIX,speedrun.com
-# 毛子网(黑号交易市场)服务器在 英国
+# 毛子网(黑号交易市场)服务器在 法国
 DOMAIN-KEYWORD,lolzteam
+DOMAIN-KEYWORD,lolz.guru
 # pokerstars有国家限制，建议使用 英国 节点
 DOMAIN-SUFFIX,pokerstars.com
 # AimWare服务器在 罗马尼亚
