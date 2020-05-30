@@ -78,7 +78,7 @@ Rule: ~
 
 {# 
 Target : Quantumult X
-Request: who (self, lulu, tira, xty, biu, none)
+Request: who (self, lulu, tira, xty, biu, leo, none)
          tf (true, false)
 #}
 {% if request.target == "quanx" %}
