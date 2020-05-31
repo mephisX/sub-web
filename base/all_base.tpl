@@ -91,7 +91,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 # 指定在某个 Wi-Fi 下暂停 Quantumult X
 {% if exists("request.who") %}
 {% if request.who == "self" %}
-running_mode_trigger=filter, filter, Cccccc:all_direct
+running_mode_trigger=filter, filter, Cccccc:all_direct, zxcvawer:all_direct
 {% else %}
 ;ssid_suspended_list=LINK_22E174, LINK_22E175
 {% endif %}
