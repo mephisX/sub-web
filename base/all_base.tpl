@@ -130,8 +130,6 @@ server=/*.twitter.com/8.8.8.8
 {% if request.who == "self" %}
 server=192.168.123.1
 {% else %}
-server=192.168.1.1
-server=192.168.0.1
 {% endif %}
 {% endif %}
 
