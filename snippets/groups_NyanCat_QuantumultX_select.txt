@@ -1,21 +1,21 @@
 Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
-Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
-VMESS`select`.*TCP 优化 - 香港 γ.*`.*(TCP|WS).*
-SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
-SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]SelectHK
-SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]SelectHK
-SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
-SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]SelectHK
-SelectSEA`select`.*(胡志明市|曼谷|孟买).*$`[]SelectHK
+Game`select`^(?!.*?(Premium|Daily)).*深圳.*$`^(?!.*?(Premium|Daily)).*上海.*$`.*Game.*$
+VMESS`select`.*TCP 优化 - 香港 ε.*`^(?!.*?香港 δ).*TCP.*$
+SelectHK`fallback`^(?!.*?(Premium|Daily)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$
+SelectTW`fallback`^(?!.*?(Premium|Daily)).*台北.*$`^(?!.*?(Game|Daily)).*台北.*$
+SelectKR`fallback`^(?!.*?(Premium|Daily)).*首尔.*$`^(?!.*?(Game|Daily)).*首尔.*$
+SelectJP`fallback`^(?!.*?(Premium|Daily)).*(东京|大阪).*$`^(?!.*?(Game|Daily)).*(东京|大阪).*$
+SelectSGP`fallback`^(?!.*?(Premium|Daily)).*深圳 - 新加坡.*$`^(?!.*?Daily).*新加坡.*$
+SelectSEA`fallback`.*(胡志明市|曼谷|孟买).*$`^(?!.*?Daily).*新加坡.*$
 SelectAU`fallback`.*(悉尼|澳大利亚).*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$
-SelectRU`select`^(?!.*?(Premium|Daily|TCP|WS)).*(莫斯科|圣彼得堡|哈巴罗夫斯克).*$`[]SelectEU
-SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$`[]SelectHK
-SelectCA`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$
-SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK
-LowRateHK`select`.*TCP 优化 - 香港 δ.*`^(?!.*?(Premium|Game|Fullcone)).*香港.*$
-LowRateTW`select`^(?!.*?(Premium|Game|Fullcone)).*(台北|台湾).*$
-LowRateSGP`select`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$
-LowRateNA`select`^(?!.*?(Premium|Game|Fullcone)).*North America.*$
+SelectRU`fallback`^(?!.*?(Premium|Daily)).*(莫斯科|圣彼得堡|哈巴罗夫斯克).*$`^(?!.*?(Premium|Daily)).*Europe.*$
+SelectEU`fallback`^(?!.*?(Premium|Daily)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$
+SelectCA`fallback`^(?!.*?(Premium|Daily)).*多伦多.*$`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$
+SelectUS`fallback`^(?!.*?(Premium|Daily)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$
+LowRateHK`fallback`.*TCP 优化 - 香港 ε.*`^(?!.*?(Premium|Game|δ)).*香港.*$
+LowRateTW`fallback`^(?!.*?(Premium|Game)).*(台北|台湾).*$
+LowRateSGP`fallback`^(?!.*?(Premium|Game)).*新加坡.*$
+LowRateNA`fallback`^(?!.*?(Premium|Game)).*North America.*$
 B1gProxy`select`[]Premium`[]Game`[]VMESS`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
