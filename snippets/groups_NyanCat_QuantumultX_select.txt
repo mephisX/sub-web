@@ -1,7 +1,7 @@
 Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
 Game`select`^(?!.*?(Premium|Daily)).*深圳.*$`^(?!.*?(Premium|Daily)).*上海.*$`.*Game.*$
 VMESS`select`.*TCP 优化 - 香港 ε.*`.*TCP.*$
-SelectHK`fallback`^(?!.*?(Premium|Daily)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`http://cp.cloudflare.com/generate_204`300
+SelectHK`fallback`^(?!.*?(Premium|Daily)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily)).*香港.*$`http://cp.cloudflare.com/generate_204`300
 SelectTW`fallback`^(?!.*?(Premium|Daily)).*台北.*$`^(?!.*?(Game|Daily)).*台北.*$`http://cp.cloudflare.com/generate_204`300
 SelectKR`fallback`^(?!.*?(Premium|Daily)).*首尔.*$`^(?!.*?(Game|Daily)).*首尔.*$`http://cp.cloudflare.com/generate_204`300
 SelectJP`fallback`^(?!.*?(Premium|Daily)).*(东京|大阪).*$`^(?!.*?(Game|Daily)).*(东京|大阪).*$`http://cp.cloudflare.com/generate_204`300
