@@ -185,26 +185,43 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 [task_local]
 # 52破解
 #浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-2 0 * * * nzw9314/NobyDa/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js
+2 0 * * * nzw9314/NobyDa/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js, tag=52破解, enabled=true
+
+# bilibili
+#打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
+2 0 * * * nzw9314/chavyleung/bilibili/bilibili.js, tag=bilibili, enabled=true
+#如需银瓜子转硬币，取消下方注释
+;2 0 * * * nzw9314/chavyleung/bilibili/bilibili.silver2coin.js, tag=
 
 # 百度贴吧
 #打开App,访问下右下角 `我的
-1,2,3 0 * * * nzw9314/NobyDa/QuantumultX/TieBa-DailyBonus/TieBa_DailyBonus_QX.js
+1,2,3 0 * * * nzw9314/NobyDa/QuantumultX/TieBa-DailyBonus/TieBa_DailyBonus_QX.js, tag=百度贴吧, enabled=true
+
+# 豆瓣时间
+# 打开 APP 手动签到一次:  `市集` > `豆瓣时间` > `签到`
+13 0 * * * nzw9314/chavyleung/dbsj/dbsj.js, tag=豆瓣时间, enabled=true
+
+# 斗鱼鱼吧 By @yyfyyf123
+3 0 * * * nzw9314/Task/yubaSign.js, tag=斗鱼鱼吧, enabled=true
 
 # 饿了么   (By @syzzzf)
 #打开 APP, 访问下`我的`>`签到领红包`(左上角)
-3 0 * * * nzw9314/Task/elemSign.js
+3 0 * * * nzw9314/Task/elemSign.js, tag=饿了么, enabled=true
 
 # 电信营业厅
 #打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
-1 0 * * * nzw9314/chavyleung/10000/10000.js
+1 0 * * * nzw9314/chavyleung/10000/10000.js, tag=电信营业厅, enabled=true
 
 # 什么值得买
 #浏览器访问并登录: https://zhiyou.smzdm.com/user/login
-5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js
+5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js, tag=什么值得买, enabled=true
+
+# 多看阅读
+#获取 Cookie: 我的 > 签到任务 等到提示获取 Cookie 成功即可
+13 1 * * * nzw9314/chavyleung/duokan/duokan.js, tag=多看阅读, enabled=true
 
 #TestFlight公测监控 (By @syzzzf)
-0 0-23/1 * * * nzw9314/Task/testflight.js
+0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=true
 
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
