@@ -185,7 +185,7 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 [task_local]
 # 52破解
 #浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-2 0 * * * nzw9314/NobyDa/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js, tag=52破解, enabled=true
+2 0 * * * nzw9314/NobyDa/52pojie-DailyBonus/52pojie.js, tag=52破解, enabled=true
 
 # bilibili
 #打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
@@ -195,7 +195,7 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 
 # 百度贴吧
 #打开App,访问下右下角 `我的
-1,2,3 0 * * * nzw9314/NobyDa/QuantumultX/TieBa-DailyBonus/TieBa_DailyBonus_QX.js, tag=百度贴吧, enabled=true
+1,2,3 0 * * * nzw9314/NobyDa/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, enabled=true
 
 # 豆瓣时间
 # 打开 APP 手动签到一次:  `市集` > `豆瓣时间` > `签到`
