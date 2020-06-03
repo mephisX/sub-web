@@ -197,13 +197,6 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 #打开App,访问下右下角 `我的
 1,2,3 0 * * * nzw9314/NobyDa/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, enabled=true
 
-# 豆瓣时间
-# 打开 APP 手动签到一次:  `市集` > `豆瓣时间` > `签到`
-13 0 * * * nzw9314/chavyleung/dbsj/dbsj.js, tag=豆瓣时间, enabled=true
-
-# 斗鱼鱼吧 By @yyfyyf123
-3 0 * * * nzw9314/Task/yubaSign.js, tag=斗鱼鱼吧, enabled=true
-
 # 饿了么   (By @syzzzf)
 #打开 APP, 访问下`我的`>`签到领红包`(左上角)
 3 0 * * * nzw9314/Task/elemSign.js, tag=饿了么, enabled=true
