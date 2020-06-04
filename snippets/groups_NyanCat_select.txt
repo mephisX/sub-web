@@ -12,7 +12,7 @@ SelectRU`select`^(?!.*?(Premium|Daily|TCP|WS)).*(莫斯科|圣彼得堡|哈巴�
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$`[]SelectHK
 SelectCA`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK
-LowRateHK`select`^(?!.*?(Premium|Game|δ)).*香港.*$
+LowRateHK`select`^(?!.*?(Premium|Game|Fullcone)).*香港.*$
 LowRateTW`select`^(?!.*?(Premium|Game|Fullcone)).*(台北|台湾).*$
 LowRateSGP`select`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$
 LowRateNA`select`^(?!.*?(Premium|Game|Fullcone)).*North America.*$
