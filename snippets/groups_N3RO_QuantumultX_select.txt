@@ -1,5 +1,5 @@
 Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
-BGP`select`.*Daily.*
+BGP`select`^(?!.*?TCP).*Daily.*
 VMESS`select`.*TCP 优化 - 香港.*`.*TCP.*$
 SelectHK`fallback`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
 SelectTW`fallback`^(?!.*?(Daily|京)).*台湾.*$`^(?!.*?(Daily|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
