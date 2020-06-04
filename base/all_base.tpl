@@ -150,7 +150,7 @@ static=SelectSEA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/
 static=SelectAU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IPLC.png
 static=SelectUS, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
 static=SelectCA, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Canada.png
-static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Russia.png
+static=SelectRU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Russia.png
 static=SelectEU, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png
 static=LowRate, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
 static=LowRateHK, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png
