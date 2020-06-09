@@ -213,6 +213,10 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf
 #获取 Cookie: 我的 > 签到任务 等到提示获取 Cookie 成功即可
 13 1 * * * nzw9314/chavyleung/duokan/duokan.js, tag=多看阅读, enabled=true
 
+# 京东618
+10,20,30,40,50 0 * * * nzw9314/chavyleung/jd/jd.618.js, tag=京东618
+0 10,12,18,20,21 * * * nzw9314/chavyleung/jd/jd.618.boom.js, tag=京东618炸弹
+
 #TestFlight公测监控 (By @syzzzf)
 0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=true
 
