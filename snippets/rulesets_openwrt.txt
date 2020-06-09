@@ -19,6 +19,7 @@ SelectRU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnRU.
 SelectEU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnEU.list
 SelectCA,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
 SelectUS,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnUS.list
+SelectSGP,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnSGP.list
 SelectSGP,[]GEOIP,SG
 SelectJP,[]GEOIP,JP
 SelectKR,[]GEOIP,KR
