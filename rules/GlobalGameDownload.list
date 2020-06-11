@@ -25,3 +25,10 @@ DOMAIN-SUFFIX,origin-a.akamaihd.net
 # 微软
 DOMAIN-SUFFIX,xvcf1.xboxlive.com
 DOMAIN-SUFFIX,xvcf2.xboxlive.com
+# 一些软件
+DOMAIN-SUFFIX,download.java.net
+DOMAIN-SUFFIX,release.tinymediamanager.org
+DOMAIN-SUFFIX,ocsp.digicert.com
+DOMAIN-SUFFIX,isrg.trustid.ocsp.identrust.com
+DOMAIN-SUFFIX,ocsp.int-x3.letsencrypt.org
+DOMAIN-SUFFIX,kjkpubsf.sfo2.digitaloceanspaces.com
