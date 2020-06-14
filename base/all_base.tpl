@@ -177,45 +177,39 @@ https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrit
 {% if request.tf == "true" %}
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, enabled=true
 {% else %}
-https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_local_WorkingCopy.conf, tag=nzw9314, enabled=true
-https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf, tag=获取Cookie, enabled=false
+https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js.conf, tag=nzw9314, enabled=true
+https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.conf, tag=获取Cookie, enabled=false
 {% endif %}
 [server_local]
 
 [task_local]
 # 52破解
 #浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-2 0 * * * nzw9314/NobyDa/52pojie-DailyBonus/52pojie.js, tag=52破解, enabled=true
+2 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=52破解, enabled=true
 
 # bilibili
 #打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
-2 0 * * * nzw9314/chavyleung/bilibili/bilibili.js, tag=bilibili, enabled=true
-#如需银瓜子转硬币，取消下方注释
-;2 0 * * * nzw9314/chavyleung/bilibili/bilibili.silver2coin.js, tag=
+2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, enabled=true
 
 # 百度贴吧
 #打开App,访问下右下角 `我的
-1,2,3 0 * * * nzw9314/NobyDa/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, enabled=true
+1,2,3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, enabled=true
 
 # 饿了么   (By @syzzzf)
 #打开 APP, 访问下`我的`>`签到领红包`(左上角)
-3 0 * * * nzw9314/Task/elemSign.js, tag=饿了么, enabled=true
+3 0 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js, tag=饿了么, enabled=true
 
 # 电信营业厅
 #打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
-1 0 * * * nzw9314/chavyleung/10000/10000.js, tag=电信营业厅, enabled=true
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅, enabled=true
 
 # 什么值得买
 #浏览器访问并登录: https://zhiyou.smzdm.com/user/login
-5 0 * * * nzw9314/chavyleung/smzdm/quanx/smzdm.js, tag=什么值得买, enabled=true
+5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, tag=什么值得买, enabled=true
 
 # 多看阅读
 #获取 Cookie: 我的 > 签到任务 等到提示获取 Cookie 成功即可
-13 1 * * * nzw9314/chavyleung/duokan/duokan.js, tag=多看阅读, enabled=true
-
-# 京东618
-10,20,30,40,50 0 * * * nzw9314/chavyleung/jd/jd.618.js, tag=京东618
-0 10,12,18,20,21 * * * nzw9314/chavyleung/jd/jd.618.boom.js, tag=京东618炸弹
+13 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, tag=多看阅读, enabled=true
 
 #TestFlight公测监控 (By @syzzzf)
 0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=true
@@ -230,15 +224,6 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
-# TikTok unblock
-{% if exists("request.who") %}
-{% if request.who == "biu" %}
-(?<=(carrier|sys)_region=)CN url 307 RU
-{% else %}
-(?<=(carrier|sys)_region=)CN url 307 JP
-{% endif %}
-{% endif %}
-(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
 # 知乎不跳转
 ^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
