@@ -212,7 +212,7 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.c
 13 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, tag=多看阅读, enabled=true
 
 #TestFlight公测监控 (By @syzzzf)
-0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=true
+0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=false
 
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
