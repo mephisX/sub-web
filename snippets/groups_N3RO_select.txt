@@ -12,8 +12,8 @@ SelectRU`fallback`.*(莫斯科|圣彼得堡|哈巴罗夫斯克|俄).*$`[]SelectE
 SelectEU`fallback`^(?!.*?Daily).*德.*$`.*(德|英|法).*`[]SelectHK`http://cp.cloudflare.com/generate_204`300
 SelectCA`fallback`^(?!.*?(Daily|京)).*加拿大.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
 SelectUS`fallback`^(?!.*?(Daily|京|α)).*美.*$`^(?!.*?Daily).*美.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
-LowRateHK`url-test`^(?!.*?(Premium|京)).*HKT.*$`http://cp.cloudflare.com/generate_204`300
-LowRateSGP`url-test`^(?!.*?(Premium|京)).*新.*$`http://cp.cloudflare.com/generate_204`300
+LowRateHK`url-test`^(?!.*?(Premium|京)).*香港.*$`http://cp.cloudflare.com/generate_204`300
+LowRateSGP`url-test`^(?!.*?(Premium|京)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
 B1gProxy`select`[]Premium`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
