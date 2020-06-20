@@ -6,8 +6,6 @@ DOMAIN-KEYWORD,lolzteam
 DOMAIN-KEYWORD,lolz.guru
 # pokerstars有国家限制，建议使用 英国 节点
 DOMAIN-SUFFIX,pokerstars.com
-# AimWare服务器在 罗马尼亚
-DOMAIN-SUFFIX,aimware.net
 # skeet欧洲社区服在 法国
 DOMAIN,eu.gamesense.pub
 # asmfreakz服务器在 荷兰
