@@ -1,6 +1,6 @@
 Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
 Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
-VMESS`select`.*TCP 优化 - 香港.*`.*TCP.*$
+VMESS`select`.*TCP 华南 - 香港.*`.*TCP.*$
 SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`[]Premium
 SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]SelectHK
 SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]SelectHK
@@ -20,8 +20,8 @@ B1gProxy`select`[]Premium`[]Game`[]VMESS`[]DIRECT
 FINAL`select`[]B1gProxy`[]DIRECT
 Apple`select`[]DIRECT`[]B1gProxy
 Microsoft`select`[]B1gProxy`[]LowRateHK`[]DIRECT
-Telegram`select`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateSGP`[]VMESS
-Netflix`select`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateSGP`[]LowRateTW`[]LowRateNA
-GlobalMedia`select`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`[]LowRateHK`[]LowRateNA
+Telegram`select`[]LowRateSGP`[]VMESS`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
+Netflix`select`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
+GlobalMedia`select`[]LowRateHK`[]LowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*
 GlobalGameDownload`select`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
