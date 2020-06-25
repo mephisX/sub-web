@@ -1,4 +1,4 @@
-Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 2x (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(上海 - 香港 2x (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`(新加坡 2x (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*`http://cp.cloudflare.com/generate_204`300
 Game`select`^(?!.*?(Premium|Daily)).*深圳.*$`^(?!.*?(Premium|Daily)).*上海.*$`.*Game.*$
 VMESS`select`^(?!.*?(Premium|Game)).*香港.*$`.*TCP.*$
 SelectHK`fallback`^(?!.*?(Premium|Daily)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily)).*香港.*$`http://cp.cloudflare.com/generate_204`300
