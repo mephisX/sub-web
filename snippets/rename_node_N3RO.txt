@@ -1,5 +1,5 @@
 !!GROUPID=0!!专线@IPLC
-!!GROUPID=0!!中继 Pro@BGP Pro
+!!GROUPID=0!!中继 Pro@BGPro
 !!GROUPID=0!!中继@BGP
 !!GROUPID=0!! → @ - 
 !!GROUPID=0!!联通@
@@ -23,11 +23,11 @@ WS:@WS
 !!GROUPID=0!!([A-Z]+) ([\x{4e00}-\x{9fa5}]+ - [\x{4e00}-\x{9fa5}]+)@$2 $1
 !!GROUPID=0!!([A-Z]+ )(α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ)@$2 $1
 !!GROUPID=0!!IPLC @#Premium
-!!GROUPID=0!!BGP Pro@#Daily Pro
+!!GROUPID=0!!BGPro @#DailyPro
 !!GROUPID=0!!BGP @#Daily
-!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (新加坡|香港|日本|韩国|台湾|印度) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|Daily|Daily Pro))@$1 #Asia #N3RO
-!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (加拿大|美国|墨西哥) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|Daily|Daily Pro))@$1 #North America #N3RO
-!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (英国|德国|法国|俄罗斯) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|Daily|Daily Pro))@$1 #Europe #N3RO
-!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (澳大利亚|悉尼|墨尔本) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|Daily|Daily Pro))@$1 #Oceania #N3RO
+!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (新加坡|香港|日本|韩国|台湾|印度) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Asia #N3RO
+!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (加拿大|美国|墨西哥) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #North America #N3RO
+!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (英国|德国|法国|俄罗斯) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Europe #N3RO
+!!GROUPID=0!!([\x{4e00}-\x{9fa5}][\x{4e00}-\x{9fa5}] - (澳大利亚|悉尼|墨尔本) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Oceania #N3RO
 !!GROUPID=0!!#Daily@0.2x #Daily
-!!GROUPID=0!!#Daily Pro@0.45x #Daily Pro
+!!GROUPID=0!!#DailyPro@0.45x #DailyPro
