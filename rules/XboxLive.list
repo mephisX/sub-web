@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,sf.prod.athena.msrareservices.com
+DOMAIN-SUFFIX,athenaprod.maelstrom.gameservices.xboxlive.com
+# Xbox Live
+DOMAIN-SUFFIX,profile.xboxlive.com
+DOMAIN-SUFFIX,rta.xboxlive.com
+DOMAIN-SUFFIX,gameserverds.xboxlive.com
+DOMAIN-SUFFIX,sessiondirectory.xboxlive.com
+DOMAIN-SUFFIX,social.xboxlive.com
+DOMAIN-SUFFIX,notify.xboxlive.com
+DOMAIN-SUFFIX,userpresence.xboxlive.com
+DOMAIN-SUFFIX,images-eds-ssl.xboxlive.com
+DOMAIN-SUFFIX,peoplehub.xboxlive.com
+DOMAIN-SUFFIX,achievements.xboxlive.com
+DOMAIN-SUFFIX,privacy.xboxlive.com
+# Xbox 云同步
+DOMAIN-SUFFIX,titlestorage.xboxlive.com
