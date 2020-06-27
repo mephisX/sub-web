@@ -16,3 +16,5 @@ DOMAIN-SUFFIX,privacy.xboxlive.com
 DOMAIN-SUFFIX,titlestorage.xboxlive.com
 # Sea of Thieves
 IP-CIDR,52.241.142.45/32,no-resolve
+DOMAIN-SUFFIX,xblcxplatqos-ause-9-18-2-0.cloudapp.net
+DOMAIN-SUFFIX,pfmsqosprod.westus.cloudapp.azure.com
