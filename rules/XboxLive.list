@@ -14,3 +14,5 @@ DOMAIN-SUFFIX,achievements.xboxlive.com
 DOMAIN-SUFFIX,privacy.xboxlive.com
 # Xbox 云同步
 DOMAIN-SUFFIX,titlestorage.xboxlive.com
+# Sea of Thieves
+IP-CIDR,52.241.142.45/32,no-resolve
