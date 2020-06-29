@@ -16,10 +16,8 @@ LowRateHK`select`^(?!.*?(Premium|Game|Fullcone)).*香港.*$
 LowRateTW`select`^(?!.*?(Premium|Game|Fullcone)).*(台北|台湾).*$
 LowRateSGP`select`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$
 LowRateNA`select`^(?!.*?(Premium|Game|Fullcone)).*North America.*$
-FINAL`select`[]Game`[]B1gProxy`[]DIRECT
+FINAL`fallback`[]Game`[]B1gProxy
 B1gProxy`select`[]Premium`[]Game`[]VMESS
-Apple`select`[]DIRECT`[]B1gProxy
-Microsoft`select`[]B1gProxy`[]LowRateHK`[]DIRECT
 Telegram`select`[]LowRateSGP`[]VMESS`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
 Netflix`select`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
 GlobalMedia`select`[]LowRateHK`[]LowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
