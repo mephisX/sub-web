@@ -10,10 +10,10 @@ Sea of Thieves(XboxLive)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 Skeet`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$[]AutoCA`[]AutoUS`[]SelectCA`[]SelectUS
 Other Games`select`[]AutoHK`[]Game`[]DIRECT
 B1gProxy`select`[]Premium`[]VMESS`[]DIRECT
-Telegram`select`[]LowRateSGP`[]VMESS`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
-Netflix`select`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
-GlobalMedia`select`[]LowRateHK`[]LowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
-GlobalGameDownload`select`[]VMESS`[]DIRECT
+Telegram`select`[]AutoLowRateSGP`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
+Netflix`select`[]AutoLowRateSGP`[]AutoLowRateTW`[]AutoLowRateNA`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
+GlobalMedia`select`[]AutoLowRateHK`[]AutoLowRateNA`[]AutoLowRateHK`[]AutoLowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
+GlobalGameDownload`select`[]AutoLowRateHK`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
 AutoHK`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`[]Premium`http://cp.cloudflare.com/generate_204`300
 SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`[]Premium
@@ -37,7 +37,11 @@ AutoCA`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS`http://c
 SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
 AutoUS`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoLowRateHK`url-test`^(?!.*?(Premium|Game|Fullcone)).*香港.*$`http://cp.cloudflare.com/generate_204`300
 LowRateHK`select`^(?!.*?(Premium|Game|Fullcone)).*香港.*$
+AutoLowRateTW`url-test`^(?!.*?(Premium|Game|Fullcone)).*(台北|台湾).*$`http://cp.cloudflare.com/generate_204`300
 LowRateTW`select`^(?!.*?(Premium|Game|Fullcone)).*(台北|台湾).*$
+AutoLowRateSGP`url-test`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$`http://cp.cloudflare.com/generate_204`300
 LowRateSGP`select`^(?!.*?(Premium|Game|Fullcone)).*新加坡.*$
+AutoLowRateNA`url-test`^(?!.*?(Premium|Game|Fullcone)).*North America.*$`http://cp.cloudflare.com/generate_204`300
 LowRateNA`select`^(?!.*?(Premium|Game|Fullcone)).*North America.*$
