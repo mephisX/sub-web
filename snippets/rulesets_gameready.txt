@@ -23,4 +23,4 @@ SelectKR,[]GEOIP,KR
 SelectTW,[]GEOIP,TW
 SelectHK,[]GEOIP,HK
 DIRECT,[]GEOIP,CN
-FINAL,[]Other Games
+Other Games,[]FINAL
