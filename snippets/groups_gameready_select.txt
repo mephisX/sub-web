@@ -7,7 +7,7 @@ GTA V or RDR2(Rockstar)`select`[]AutoHK`[]AutoUS`[]SelectHK`[]SelectUS
 GranTurismo`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 R6 Rainbow Six Siege(ubisoft)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 Sea of Thieves(XboxLive)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
-Skeet`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$[]AutoCA`[]AutoUS`[]SelectCA`[]SelectUS
+Skeet`select`[]AutoCA`[]AutoUS`[]SelectCA`[]SelectUS
 Other Games`select`[]AutoHK`[]Game`[]DIRECT
 B1gProxy`select`[]Premium`[]VMESS`[]DIRECT
 Telegram`select`[]AutoLowRateSGP`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
