@@ -12,7 +12,7 @@ Other Games`select`[]AutoHK`[]Game`[]DIRECT
 B1gProxy`select`[]Premium`[]VMESS`[]DIRECT
 Telegram`select`[]AutoLowRateSGP`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
 Netflix`select`[]AutoLowRateSGP`[]AutoLowRateTW`[]AutoLowRateNA`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
-GlobalMedia`select`[]AutoLowRateHK`[]AutoLowRateNA`[]AutoLowRateHK`[]AutoLowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
+GlobalMedia`select`[]AutoLowRateHK`[]AutoLowRateNA`[]LowRateHK`[]LowRateNA`((深圳|上海) - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
 GlobalGameDownload`select`[]AutoLowRateHK`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
 AutoHK`fallback`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`[]Premium`http://cp.cloudflare.com/generate_204`300
