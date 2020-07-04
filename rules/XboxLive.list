@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,images-eds-ssl.xboxlive.com
 DOMAIN-SUFFIX,peoplehub.xboxlive.com
 DOMAIN-SUFFIX,achievements.xboxlive.com
 DOMAIN-SUFFIX,privacy.xboxlive.com
+DOMAIN-SUFFIX,x1ds.xboxlive.com
 # Xbox Cloud Sync
 DOMAIN-SUFFIX,titlestorage.xboxlive.com
 # Sea of Thieves
