@@ -212,6 +212,13 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.c
 #获取 Cookie: 我的 > 签到任务 等到提示获取 Cookie 成功即可
 13 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, tag=多看阅读, enabled=true
 
+# 喜茶 (By @zZPiglet)
+# 进入"喜茶GO"小程序，点击"我的"，进入"任务中心"
+1 0 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/HEYTEA/HEYTEA.js, tag=喜茶, img-url=https://raw.githubusercontent.com/Orz-3/task/master/HEYTEA.png,enabled=true
+
+# > 万达电影
+10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, tag=wanda-签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/wanda.png,enabled=true
+
 #TestFlight公测监控 (By @syzzzf)
 0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=false
 
@@ -225,8 +232,6 @@ geoip, cn, direct
 final, Final
 
 [rewrite_local]
-# 知乎不跳转
-^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
 [mitm]
 hostname = www.zhihu.com
