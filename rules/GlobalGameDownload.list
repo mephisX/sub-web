@@ -32,5 +32,4 @@ DOMAIN-SUFFIX,ocsp.digicert.com
 DOMAIN-SUFFIX,isrg.trustid.ocsp.identrust.com
 DOMAIN-SUFFIX,ocsp.int-x3.letsencrypt.org
 DOMAIN-SUFFIX,kjkpubsf.sfo2.digitaloceanspaces.com
-DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,the.earth.li
