@@ -1,32 +1,34 @@
 DIRECT,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/UnbreakOpenwrt.list
+DIRECT,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/UnbreakWindows.list
 Hijacking,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list
 Hijacking,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
+DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Apple.list
 GlobalGameDownload,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/GlobalGameDownload.list
-SelectKR,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/COD16.list
-SelectTW,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/LOLTW.list
-SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/Rockstar.list
-SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/GranTurismo.list
-SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/ubi.list
-SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/XboxLive.list
-SelectHK,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/playstation.list
+Call of Duty,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/COD16.list
+League of Legends(garena),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/LOLTW.list
+GTA V or RDR2(Rockstar),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/Rockstar.list
+GranTurismo,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/GranTurismo.list
+R6 Rainbow Six Siege(ubisoft),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/ubi.list
+Sea of Thieves(XboxLive),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/XboxLive.list
+Steam Global(Without Download),https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+TeamViewer,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TeamViewer.list
+Skeet,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
 Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
 GlobalMedia,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 Telegram,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
-Apple,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Apple.list
-Microsoft,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/Microsoft.list
+GlobalMedia,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/Microsoft.list
 GlobalMedia,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/discord.list
-B1gProxy,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
+B1gProxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-SelectRU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnRU.list
-SelectEU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnEU.list
-SelectCA,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
-SelectUS,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnUS.list
-SelectSGP,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnSGP.list
-SelectSGP,[]GEOIP,SG
-SelectJP,[]GEOIP,JP
-SelectKR,[]GEOIP,KR
-SelectTW,[]GEOIP,TW
-SelectHK,[]GEOIP,HK
+AutoRU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnRU.list
+AutoEU,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnEU.list
+AutoCA,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
+AutoUS,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnUS.list
+AutoSGP,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnSGP.list
+AutoSGP,[]GEOIP,SG
+AutoJP,[]GEOIP,JP
+AutoKR,[]GEOIP,KR
+AutoTW,[]GEOIP,TW
 DIRECT,[]GEOIP,CN
 FINAL,[]FINAL
