@@ -31,4 +31,4 @@ AutoJP,[]GEOIP,JP
 AutoKR,[]GEOIP,KR
 AutoTW,[]GEOIP,TW
 DIRECT,[]GEOIP,CN
-FINAL,[]Other Games
+Other Games,[]FINAL
