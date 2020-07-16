@@ -1,5 +1,5 @@
 Premium`fallback`^(?!.*?N3RO).*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*$`^(?!.*?N3RO).*(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*$`^(?!.*?N3RO).*(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*$`http://cp.cloudflare.com/generate_204`300
-Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
+Game`select`^(?!.*?(Premium|Daily|TCP|WS|IEPL)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
 N3RO`fallback`^(?!.*?(Daily|京|上|α)).*(香港 (β|γ|δ|ε|ζ|η||θ|ι) #Premium).*$`^(?!.*?(Daily|京|α)).*(香港 (β|γ|δ|ε|ζ|η||θ|ι) #Premium).*$`.*(香港 (α|β|γ|δ|ε|ζ|η||θ|ι) #Premium).*$`^(?!.*?(Daily|京|上|α)).*新.*$`^(?!.*?(Daily|京)).*新.*$`[]LowRateHK`[]LowRateSGP`http://cp.cloudflare.com/generate_204`300
 VMESS`select`^(?!.*?(Premium|Game|N3RO|IEPL)).*华南 - 香港.*$`.*TCP.*$
 Call of Duty`select`[]AutoKR`[]AutoJP`[]SelectKR`[]SelectJP
