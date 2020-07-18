@@ -7,7 +7,7 @@ GTA V or RDR2(Rockstar)`select`[]AutoHK`[]AutoUS`[]SelectHK`[]SelectUS
 GranTurismo`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 R6 Rainbow Six Siege(ubisoft)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 Sea of Thieves(XboxLive)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
-Steam Global(Without Download)`select`[]Premium`[]SelectEU`[]SelectRU`[]DIRECT
+Steam Global(Without Download)`select`[]Premium`[]SelectEU`[]SelectRU`[]DIRECT`[]REJECT
 TeamViewer`select`[]AutoLowRate 🇭🇰`[]Premium`[]DIRECT
 Skeet`select`[]AutoCA`[]AutoUS`[]SelectCA`[]SelectUS
 Other Games`select`[]AutoHK`[]Game`[]DIRECT
