@@ -1,4 +1,5 @@
-!!GROUPID=0!!专线(|Light)@IPLC
+!!GROUPID=0!!专线@IPLC
+!!GROUPID=0!!专线Light@LITE
 !!GROUPID=0!!中继Pro@BGPRO
 !!GROUPID=0!!中继@BGP
 !!GROUPID=0!! → @ - 
@@ -23,12 +24,14 @@ WS:@WS
 !!GROUPID=0!!([A-Z]+) ([\u4e00-\u9fa5]+ - [\u4e00-\u9fa5]+)@$2 $1
 !!GROUPID=0!!([A-Z]+ )(α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ)@$2 $1
 !!GROUPID=0!!IPLC @#Premium
+!!GROUPID=0!!LITE @#PremiumLite
 !!GROUPID=0!!BGPRO @#DailyPro
 !!GROUPID=0!!BGP @#Daily
-!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (新加坡|香港|日本|韩国|台湾|印度) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Asia #N3RO
-!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (加拿大|美国|墨西哥) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #North America #N3RO
-!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (英国|德国|法国|俄罗斯) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Europe #N3RO
-!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (澳大利亚|悉尼|墨尔本) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|DailyPro|Daily))@$1 #Oceania #N3RO
+!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (新加坡|香港|日本|韩国|台湾|印度) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|PremiumLite|DailyPro|Daily))@$1 #Asia #N3RO
+!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (加拿大|美国|墨西哥) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|PremiumLite|DailyPro|Daily))@$1 #North America #N3RO
+!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (英国|德国|法国|俄罗斯) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|PremiumLite|DailyPro|Daily))@$1 #Europe #N3RO
+!!GROUPID=0!!([\u4e00-\u9fa5][\u4e00-\u9fa5] - (澳大利亚|悉尼|墨尔本) (α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ) #(Premium|PremiumLite|DailyPro|Daily))@$1 #Oceania #N3RO
 !!GROUPID=0!!#Daily @0.2x #Daily 
 !!GROUPID=0!!#DailyPro @0.45x #DailyPro 
+!!GROUPID=0!!#PremiumLite @0.6x ##PremiumLite 
 ιEPL@IEPL
