@@ -1,4 +1,4 @@
-!!GROUPID=0!!专线@IPLC
+!!GROUPID=0!!专线(|Light)@IPLC
 !!GROUPID=0!!中继Pro@BGPRO
 !!GROUPID=0!!中继@BGP
 !!GROUPID=0!! → @ - 
