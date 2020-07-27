@@ -174,13 +174,9 @@ static=Hijacking, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/
 [rewrite_remote]
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag = 去广告1, enabled = true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag = 去广告2, enabled = true
-{% if request.tf == "true" %}
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, enabled=true
-{% else %}
 https://raw.githubusercontent.com/loric729/Sricpt/master/TikTok.conf, tag=TikTok, enabled=true
 https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js.conf, tag=nzw9314, enabled=true
 https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.conf, tag=获取Cookie, enabled=false
-{% endif %}
 [server_local]
 
 [task_local]
