@@ -1,4 +1,4 @@
-Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`.*深圳 - 香港 Pro.*$`.*IEPL.*$`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`http://cp.cloudflare.com/generate_204`300
+Premium`fallback`.*(深圳 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`.*(华南 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`.*深圳 - 香港 Pro.*$`.*IEPL.*$`(上海 - 香港 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*`http://cp.cloudflare.com/generate_204`300
 Game`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*上海.*$`.*(Game|Fullcone).*$
 VMESS`select`^(?!.*?(Premium|Game|IEPL)).*香港.*$`.*TCP.*$
 Call of Duty`select`[]AutoKR`[]AutoJP`[]SelectKR`[]SelectJP
@@ -7,7 +7,7 @@ GTA V or RDR2(Rockstar)`select`[]AutoHK`[]AutoUS`[]SelectHK`[]SelectUS
 GranTurismo`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 R6 Rainbow Six Siege(ubisoft)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 Sea of Thieves(XboxLive)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
-Steam Global(Without Download)`select`[]Premium`[]SelectEU`[]SelectRU`[]DIRECT`[]REJECT
+Steam Global(Without Download)`select`[]Premium`[]SelectEU`[]SelectRU`[]SelectSGP`[]DIRECT`[]REJECT
 TeamViewer`select`[]AutoLowRate 🇭🇰`[]Premium`[]DIRECT
 Skeet`select`[]AutoCA`[]AutoUS`[]SelectCA`[]SelectUS
 Other Games`select`[]AutoHK`[]Game`[]DIRECT
