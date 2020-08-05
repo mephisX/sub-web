@@ -10,7 +10,7 @@ Sea of Thieves(XboxLive)`select`[]AutoHK`[]AutoJP`[]SelectHK`[]SelectJP
 Steam Global(Without Download)`select`[]FallbackLowRate 🇭🇰`[]Premium`[]SelectEU`[]SelectRU`[]SelectSGP`[]DIRECT`[]REJECT
 TeamViewer`select`[]FallbackLowRate 🇭🇰`[]Premium`[]DIRECT
 Skeet`select`[]AutoCA`[]SelectUS
-Other Games`select`[]AutoHK`[]Game`.*香港 Pro.*$`[]DIRECT
+Other Games`select`[]AutoHK`[]Game`[]VMESS`.*香港 Pro.*$`[]DIRECT
 B1gProxy`select`[]Premium`[]VMESS`[]DIRECT
 Telegram`select`[]AutoLowRate 🇸🇬`[]LowRateSGP`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
 Netflix`select`[]AutoLowRate 🇸🇬`[]AutoLowRate 🇨🇳`[]AutoLowRate 🇺🇲`[]LowRateSGP`[]LowRateTW`[]LowRateNA`(新加坡 (α|β|γ|δ|ε|ζ|η||θ|ι)( [0-9]+x | )#Premium).*
