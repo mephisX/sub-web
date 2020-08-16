@@ -20,25 +20,25 @@ GlobalGameDownload`select`[]FallbackLowRate 🇭🇰`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
 AutoHK`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`.*IEPL 华南.*$`[]Premium`http://cp.cloudflare.com/generate_204`300
 SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`.*香港 Pro.*$`[]Premium
-AutoTW`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoTW`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`^(?!.*?(Game|Daily|TCP|WS)).*台北.*$`[]SelectHK
-AutoKR`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoKR`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]SelectHK
-AutoJP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoJP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
-AutoSGP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoSGP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]SelectHK
-AutoSEA`fallback`(?!.*?N3RO).*(胡志明市|曼谷|孟买).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoSEA`fallback`(?!.*?N3RO).*(胡志明市|曼谷|孟买).*$`[]AutoSGP`http://cp.cloudflare.com/generate_204`300
 SelectSEA`fallback`.*(胡志明市|曼谷|孟买).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
-AutoAU`fallback`(?!.*?N3RO).*(悉尼|澳大利亚).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoAU`fallback`(?!.*?N3RO).*(悉尼|澳大利亚).*$`[]AutoSGP`http://cp.cloudflare.com/generate_204`300
 SelectAU`select`.*(悉尼|澳大利亚).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
-AutoRU`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*(莫斯科|圣彼得堡|哈巴罗夫斯克).*$`[]SelectEU`http://cp.cloudflare.com/generate_204`300
+AutoRU`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*(莫斯科|圣彼得堡|哈巴罗夫斯克).*$`[]AutoEU`http://cp.cloudflare.com/generate_204`300
 SelectRU`select`^(?!.*?(Premium|Daily|TCP|WS)).*(莫斯科|圣彼得堡|哈巴罗夫斯克).*$`[]SelectEU`http://cp.cloudflare.com/generate_204`300
-AutoEU`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoEU`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectEU`select`^(?!.*?(Premium|Daily|TCP|WS)).*Europe.*$`^(?!.*?(Game|Daily|TCP|WS)).*Europe.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
-AutoCA`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*多伦多.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
+AutoCA`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*多伦多.*$`[]AutoUS`http://cp.cloudflare.com/generate_204`300
 SelectCA`select`^(?!.*?(Premium|Daily|TCP|WS)).*多伦多.*$`[]SelectUS`http://cp.cloudflare.com/generate_204`300
-AutoUS`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
+AutoUS`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectUS`select`^(?!.*?(Premium|Daily|TCP|WS)).*硅谷.*$`^(?!.*?(Premium|Daily|TCP|WS|多伦多)).*America.*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
 LowRateHK`select`^(?!.*?(Premium|Game|Fullcone|IEPL)).*香港.*$
 AutoLowRate 🇭🇰`url-test`^(?!.*?(Premium|Game|Fullcone|IEPL|Pro)).*香港.*$`http://cp.cloudflare.com/generate_204`300
