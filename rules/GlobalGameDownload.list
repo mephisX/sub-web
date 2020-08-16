@@ -1,5 +1,6 @@
 # Garena LOL TW download
 DOMAIN-SUFFIX,loltw.qcloud.gpipe.garenanow.com
+DOMAIN-SUFFIX,loltw.aws.gpipe.garenanow.com
 DOMAIN-SUFFIX,loltw.cdn.gpipe.garenanow.com
 DOMAIN-SUFFIX,cdn.gxx.garenanow.com
 # 暴雪战网下载 akamaihd CDN
