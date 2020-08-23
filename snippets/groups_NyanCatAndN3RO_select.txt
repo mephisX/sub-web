@@ -19,7 +19,7 @@ GlobalMedia`select`[]FallbackLowRate 🇭🇰`[]AutoLowRate 🇭🇰`[]AutoLowRa
 GlobalGameDownload`select`[]FallbackLowRate 🇭🇰`[]VMESS`[]DIRECT
 Hijacking`select`[]REJECT`[]DIRECT
 AutoHK`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`[]Premium`http://cp.cloudflare.com/generate_204`300
-SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`.*香港 Pro.*$`[]Premium
+SelectHK`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港 γ.*$`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 香港.*$`^(?!.*?(Premium|Daily|TCP|WS)).*香港.*$`.*香港 Pro.*$`.*IEPL 华南 - 香港.*$
 AutoTW`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*台北.*$`^(?!.*?(Daily|TCP|WS)).*台北.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectTW`select`^(?!.*?(Premium|Daily|TCP|WS)).*台北.*$`^(?!.*?(Daily|TCP|WS)).*台北.*$`[]SelectHK
 AutoKR`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*首尔.*$`^(?!.*?(Game|Daily|TCP|WS)).*首尔.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
@@ -27,7 +27,7 @@ SelectKR`select`^(?!.*?(Premium|Daily|TCP|WS)).*首尔.*$`^(?!.*?(Game|Daily|TCP
 AutoJP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
 SelectJP`select`^(?!.*?(Premium|Daily|TCP|WS)).*(东京|大阪).*$`^(?!.*?(Game|Daily|TCP|WS)).*(东京|大阪).*$`[]SelectHK
 AutoSGP`fallback`^(?!.*?(Premium|Daily|TCP|WS|N3RO)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]AutoHK`http://cp.cloudflare.com/generate_204`300
-SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`[]SelectHK
+SelectSGP`select`^(?!.*?(Premium|Daily|TCP|WS)).*深圳 - 新加坡.*$`^(?!.*?(Daily|TCP|WS)).*新加坡.*$`.*IEPL 华南 - 新加坡.*$`[]SelectHK
 AutoSEA`fallback`(?!.*?N3RO).*(胡志明市|曼谷|孟买).*$`[]AutoSGP`http://cp.cloudflare.com/generate_204`300
 SelectSEA`fallback`.*(胡志明市|曼谷|孟买).*$`[]SelectHK`http://cp.cloudflare.com/generate_204`300
 AutoAU`fallback`(?!.*?N3RO).*(悉尼|澳大利亚).*$`[]AutoSGP`http://cp.cloudflare.com/generate_204`300
