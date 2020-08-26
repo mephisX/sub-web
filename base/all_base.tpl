@@ -192,6 +192,11 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.c
 # 打开App,访问下右下角 `我的
 1,2,3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=贴吧, img-url=https://raw.githubusercontent.com/Orz-3/task/master/tieba.png,enabled=true
 
+# 滴滴出行  (By @zZPiglet)
+# 进入"滴滴出行"，若弹出"首次写入滴滴出行 Token 成功"
+1 0 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js, tag=滴滴出行, img-url=https://raw.githubusercontent.com/Orz-3/task/master/didi.png,enabled=true
+59 23 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js, tag=滴滴出行, img-url=https://raw.githubusercontent.com/Orz-3/task/master/didi.png,enabled=true
+
 # 饿了么   (By @syzzzf)
 # 打开 APP, 访问下`我的`>`签到领红包`(左上角)
 3 0 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js, img-url=https://raw.githubusercontent.com/Orz-3/task/master/elem.png,enabled=true
