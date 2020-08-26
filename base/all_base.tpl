@@ -181,42 +181,56 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.c
 
 [task_local]
 # 52破解
-#浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-2 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=52破解, enabled=true
+# 浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
+2 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=52破解, img-url=https://raw.githubusercontent.com/Orz-3/task/master/52pj.png,enabled=true
 
 # bilibili
-#打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
-2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, enabled=true
+# 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
+2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png,enabled=true
 
 # 百度贴吧
-#打开App,访问下右下角 `我的
-1,2,3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, enabled=true
+# 打开App,访问下右下角 `我的
+1,2,3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=贴吧, img-url=https://raw.githubusercontent.com/Orz-3/task/master/tieba.png,enabled=true
 
 # 饿了么   (By @syzzzf)
-#打开 APP, 访问下`我的`>`签到领红包`(左上角)
-3 0 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js, tag=饿了么, enabled=true
+# 打开 APP, 访问下`我的`>`签到领红包`(左上角)
+3 0 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js, img-url=https://raw.githubusercontent.com/Orz-3/task/master/elem.png,enabled=true
+3 0 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js, tag=饿了么-打卡领红包, img-url=https://raw.githubusercontent.com/Orz-3/task/master/elem.png,enabled=true
+
+# 豆瓣电影日历 (By @zZPiglet)
+# 进入  widget 界面（iOS 13 负一屏），添加「豆瓣·电影日历」，并重新进入此界面使其刷新获取内容，若弹出"首次写入 MovieCalendar APIKey 成功"即可正常食用
+0 18 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/MovieCalendar/MovieCalendar.js, tag=电影日历
 
 # 电信营业厅
-#打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
-1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅, enabled=true
+# 打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10000.png,enabled=true
 
 # 什么值得买
-#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
-5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, tag=什么值得买, enabled=true
+# 浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, tag=什么值得买, img-url=https://raw.githubusercontent.com/Orz-3/task/master/smzdm.png,enabled=true
 
 # 多看阅读
-#获取 Cookie: 我的 > 签到任务 等到提示获取 Cookie 成功即可
-13 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, tag=多看阅读, enabled=true
+# `我的` > `签到任务` 等到提示获取 Cookie 成功即可
+13 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, tag=多看, img-url=https://raw.githubusercontent.com/Orz-3/task/master/duokan.png,enabled=true
 
-# 喜茶 (By @zZPiglet)
-# 进入"喜茶GO"小程序，点击"我的"，进入"任务中心"
-1 0 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/HEYTEA/HEYTEA.js, tag=喜茶, img-url=https://raw.githubusercontent.com/Orz-3/task/master/HEYTEA.png,enabled=true
+# 中国联通
+# 1打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
+# 2首页>天天抽奖, 系统提示 `2` 次: `获取Cookie: 成功 (登录抽奖)` 和 `获取Cookie: 成功 (抽奖次数)`
+8 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js, tag=中国联通, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10010.png,enabled=true
 
 # > 万达电影
 10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, tag=wanda-签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/wanda.png,enabled=true
 
-#TestFlight公测监控 (By @syzzzf)
-0 0-23/1 * * * nzw9314/Task/testflight.js, tag=TestFlight公测监控, enabled=false
+# TestFlight公测监控 (By @syzzzf)
+0 0-23/1 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, tag=TestFlight公测监控, img-url=https://raw.githubusercontent.com/Orz-3/task/master/testflight.png,enabled=true
+
+# 飞客茶馆
+# 打开 APP, 访问下`个人中心`
+3 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=飞客茶馆, img-url=https://raw.githubusercontent.com/Orz-3/task/master/flyertea.png,enabled=true
+
+# > 机场签到 (by evilbutcher & Neurogram )
+# 使用BoxJs配置订阅及密码
+2 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js, tag=机场签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/airport.png,enabled=true
 
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
