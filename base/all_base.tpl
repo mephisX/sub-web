@@ -240,7 +240,7 @@ https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.c
 
 # > 机场签到 (by evilbutcher & Neurogram )
 # 使用BoxJs配置订阅及密码
-2 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js, tag=机场签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/airport.png,enabled=true
+58 23 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js, tag=机场签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/airport.png,enabled=true
 
 [filter_local]
 ip-cidr, 10.0.0.0/8, direct
