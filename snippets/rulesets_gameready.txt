@@ -9,7 +9,7 @@ GTA V or RDR2(Rockstar),https://raw.githubusercontent.com/mephisX/sub-web/master
 GranTurismo,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/GranTurismo.list
 R6 Rainbow Six Siege(ubisoft),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/ubi.list
 Sea of Thieves(XboxLive),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/XboxLive.list
-Steam Global(Without Download),https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+Steam Global(Without Download),https://raw.githubusercontent.com/mephisX/sub-web/master/rules/SteamCommunity.list
 TeamViewer,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TeamViewer.list
 Skeet,https://raw.githubusercontent.com/mephisX/sub-web/master/rules/NoCdnCA.list
 Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
